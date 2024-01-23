@@ -20,7 +20,7 @@ public class ManageOrderTest extends Base {
 	    loginPage.enterUserNameOnUserNameField(username);
 	    loginPage.enterPassWordOnPassWordFeild(password);
 	    loginPage.clickOnSignInButton();
-        loginPage.navigateToAPage("https://groceryapp.uniqassosiates.com/admin/list-order");
+        loginPage.navigateToAPage(ExcelUtility.getString(2,1, "url"));
 		
         ManageOrderPage manageOrderPage=new ManageOrderPage(driver);
         manageOrderPage.clickOnSearchButton();

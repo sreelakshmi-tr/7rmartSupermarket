@@ -1,17 +1,17 @@
 package pages;
 
 import java.util.List;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import utilities.PageUtility;
+import utilities.RandomInputUtility;
 
 public class AdminUsersPage {
     WebDriver driver;
     PageUtility pageUtility;
+    RandomInputUtility randomInputUtility;
     @FindBy(xpath = "//a[@onclick='click_button(1)']")WebElement newButton;
     @FindBy(xpath = "//a[@onclick='click_button(2)']")WebElement searchButton;
     @FindBy(xpath = "//input[@id='username']")WebElement userNameField;
@@ -27,6 +27,7 @@ public class AdminUsersPage {
 		this.driver =driver;
 		PageFactory.initElements(driver,this );
         pageUtility = new PageUtility();
+        randomInputUtility = new RandomInputUtility(); 
 		}
 	
 	public void clickOnNewButton() {
@@ -53,12 +54,12 @@ public class AdminUsersPage {
     
     public String getNewPassword() {
     	
-		return pageUtility.randomPasswordGenerator();
+		return randomInputUtility.randomPasswordGenerator();
 	}
     
     public String getNewUserName() {
     	
-		return pageUtility.randomNameGenerator();
+		return randomInputUtility.randomFirstNameGenerator();
 	}
     
     public void selectUserType(String expectedUserType) {

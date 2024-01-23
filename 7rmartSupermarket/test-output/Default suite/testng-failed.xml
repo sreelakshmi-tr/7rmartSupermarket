@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testscript.ManageDeliveryBoyTest">
+      <class name="testscript.ManageOfferCodeTest">
         <methods>
+          <include name="veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered"/>
           <include name="inititializeBrowser"/>
           <include name="driverQuit"/>
-          <include name="verifyAnyDeliverBoyPresentInTheListForAValidePhoneNumber"/>
         </methods>
-      </class> <!-- testscript.ManageDeliveryBoyTest -->
+      </class> <!-- testscript.ManageOfferCodeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

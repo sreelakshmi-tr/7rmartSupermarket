@@ -22,7 +22,7 @@ public class ManageDeliveryBoyTest extends Base{
 	    loginPage.enterUserNameOnUserNameField(username);
 	    loginPage.enterPassWordOnPassWordFeild(password);
 	    loginPage.clickOnSignInButton();
-        loginPage.navigateToAPage("https://groceryapp.uniqassosiates.com/admin/list-deliveryboy");
+        loginPage.navigateToAPage(ExcelUtility.getString(1, 1, "url"));
        
 		manageDeliveryBoyPage.clickOnNewButton();
         manageDeliveryBoyPage.enterNewNameOnTheForm();
@@ -48,7 +48,7 @@ public class ManageDeliveryBoyTest extends Base{
 	    loginPage.enterUserNameOnUserNameField(username);
 	    loginPage.enterPassWordOnPassWordFeild(password);
 	    loginPage.clickOnSignInButton();
-        loginPage.navigateToAPage("https://groceryapp.uniqassosiates.com/admin/list-deliveryboy");
+        loginPage.navigateToAPage(ExcelUtility.getString(1, 1, "url"));
         manageDeliveryBoyPage.clickOnsearchMenuButton();
         manageDeliveryBoyPage.enterEmailOnEmailField(email);
         manageDeliveryBoyPage.clickOnSearchSubmitButton();
@@ -72,7 +72,7 @@ public class ManageDeliveryBoyTest extends Base{
 	    loginPage.enterUserNameOnUserNameField(username);
 	    loginPage.enterPassWordOnPassWordFeild(password);
 	    loginPage.clickOnSignInButton();
-        loginPage.navigateToAPage("https://groceryapp.uniqassosiates.com/admin/list-deliveryboy");
+        loginPage.navigateToAPage(ExcelUtility.getString(1, 1, "url"));
        
         manageDeliveryBoyPage.clickOnsearchMenuButton();
         manageDeliveryBoyPage.enterEmailOnEmailField(email);
@@ -97,7 +97,7 @@ public class ManageDeliveryBoyTest extends Base{
 	    loginPage.enterUserNameOnUserNameField(username);
 	    loginPage.enterPassWordOnPassWordFeild(password);
 	    loginPage.clickOnSignInButton();
-        loginPage.navigateToAPage("https://groceryapp.uniqassosiates.com/admin/list-deliveryboy");
+        loginPage.navigateToAPage(ExcelUtility.getString(1, 1, "url"));
        
 		
         manageDeliveryBoyPage.clickOnsearchMenuButton();
@@ -123,7 +123,7 @@ public class ManageDeliveryBoyTest extends Base{
 	    loginPage.enterUserNameOnUserNameField(username);
 	    loginPage.enterPassWordOnPassWordFeild(password);
 	    loginPage.clickOnSignInButton();
-        loginPage.navigateToAPage("https://groceryapp.uniqassosiates.com/admin/list-deliveryboy");
+        loginPage.navigateToAPage(ExcelUtility.getString(1, 1, "url"));
        
 		
         manageDeliveryBoyPage.clickOnsearchMenuButton();
@@ -150,7 +150,7 @@ public class ManageDeliveryBoyTest extends Base{
 	    loginPage.enterUserNameOnUserNameField(username);
 	    loginPage.enterPassWordOnPassWordFeild(password);
 	    loginPage.clickOnSignInButton();
-        loginPage.navigateToAPage("https://groceryapp.uniqassosiates.com/admin/list-deliveryboy");
+        loginPage.navigateToAPage(ExcelUtility.getString(1, 1, "url"));
        
 		
         manageDeliveryBoyPage.clickOnsearchMenuButton();
@@ -176,7 +176,7 @@ public class ManageDeliveryBoyTest extends Base{
 	    loginPage.enterUserNameOnUserNameField(username);
 	    loginPage.enterPassWordOnPassWordFeild(password);
 	    loginPage.clickOnSignInButton();
-        loginPage.navigateToAPage("https://groceryapp.uniqassosiates.com/admin/list-deliveryboy");
+        loginPage.navigateToAPage(ExcelUtility.getString(1, 1, "url"));
        
 		
         manageDeliveryBoyPage.clickOnsearchMenuButton();

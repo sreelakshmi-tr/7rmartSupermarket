@@ -5,11 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.PageUtility;
+import utilities.RandomInputUtility;
 
 
 public class ManageDeliveryBoyPage {
 	WebDriver driver;
 	PageUtility pageUtility;
+	RandomInputUtility randomInputUtility;
 	@FindBy(xpath = "//a[@onclick='click_button(2)']")WebElement searchMenuButton;
 	@FindBy(xpath = "//input[@placeholder='Email']")WebElement emailField;
 	@FindBy(xpath = "//input[@placeholder='Name']")WebElement nameField;
@@ -29,6 +31,7 @@ public class ManageDeliveryBoyPage {
 		this.driver =driver;
 		PageFactory.initElements(driver,this );
 		pageUtility = new PageUtility();
+		randomInputUtility = new RandomInputUtility();
 	}
 	
 	
@@ -54,7 +57,7 @@ public class ManageDeliveryBoyPage {
 	}
     public void enterPhoneNumberOnPhoneNumberField(String phoneNumber) {
     	 if(phoneNumber==null)
-    		 phoneNumber= pageUtility.randomPhoneNumberGenerator();
+    		 phoneNumber= randomInputUtility.randomPhoneNumberGenerator();
 		
 		 phoneNumberField.sendKeys(phoneNumber);
 	}
@@ -75,7 +78,7 @@ public class ManageDeliveryBoyPage {
     }
     
     public void enterNewNameOnTheForm() {
-    	String name = pageUtility.randomFullNameGenerator();
+    	String name = randomInputUtility.randomFullNameGenerator();
     	newName.sendKeys(name);
 
     }

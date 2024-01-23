@@ -10,8 +10,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.github.javafaker.Faker;
-
 public class PageUtility {
 	
 	public void scrollBy(WebDriver driver) {
@@ -58,27 +56,7 @@ public class PageUtility {
 	    wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
-	public String randomPhoneNumberGenerator() {
-		Faker faker= new Faker();
-		return faker.phoneNumber().cellPhone();
-		
-	}
 	
-	public String randomNameGenerator() {
-		Faker faker= new Faker();
-		return faker.name().firstName();
-		
-	}
 	
-	public String randomFullNameGenerator() {
-		Faker faker= new Faker();
-		return faker.name().fullName();
-		
-	}
-	
-	public String randomPasswordGenerator() {
-		Faker faker= new Faker();
-		return faker.code().asin();
-		
-	}
+
 }

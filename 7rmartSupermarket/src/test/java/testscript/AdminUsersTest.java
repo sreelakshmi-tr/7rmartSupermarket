@@ -28,7 +28,7 @@ public class AdminUsersTest extends Base {
 	    loginPage.enterUserNameOnUserNameField(username);
 	    loginPage.enterPassWordOnPassWordFeild(password);
 	    loginPage.clickOnSignInButton();
-        loginPage.navigateToAPage("https://groceryapp.uniqassosiates.com/admin/list-admin");
+        loginPage.navigateToAPage(ExcelUtility.getString(0,1, "url"));
        
         
         adminUsersPage.clickOnNewButton();
