@@ -9,15 +9,15 @@ import org.openqa.selenium.WebElement;
 
 
 public class FileUploadUtility {
-	public void fileUploadUsingSendKeys(WebElement chooseFile,String url) {
+	public void fileUploadUsingSendKeys(WebElement chooseFile,String filePath) {
 
-		chooseFile.sendKeys(url);
+		chooseFile.sendKeys(filePath);
 	}
 	
 
-	 public void fileUploadUsingRobotClass(WebElement chooseFile ,String url) throws AWTException {
+	 public void fileUploadUsingRobotClass(WebElement chooseFile ,String filePath) throws AWTException {
 		
-		 StringSelection s = new StringSelection(url);
+		 StringSelection s = new StringSelection(filePath);
 		 chooseFile.click();
 	     Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s,null);
 	     

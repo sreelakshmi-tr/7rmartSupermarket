@@ -3,17 +3,22 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-     <class name="testscript.ManageDeliveryBoyTest"/>
+     <class name="testscript.ManageDeliveryBoyTest">
+          <methods>
+			  <include name="verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing"></include>
+		      <include name="verifyDeliverBoyStatusGettingChangedByStatusButtonClick"></include>	
+		      <include name="verifyAnyDeliverBoyPresentInTheListForAValidEmail"></include>	
+		  </methods>
+	  </class>
       <class name="testscript.LoginTest">
 		  <methods>
-			  <!--<include name="verifyWhetherTheUserIsAbleToLoginWithValidCredentials"></include>
-			  <include name="verifyWhetherTheUserIsUnbleToLoginWithIncorrectUserNameAndCorrectPassWord"></include>
-		  -->
-		      <exclude name="verifyWhetherTheUserIsUnableToLoginWithCorrectUserNameAndIncorrectPassWord"></exclude>
+			  <include name="verifyWhetherTheUserIsAbleToLoginWithValidCredentials"></include>
 		  </methods>
 	  </class>	
 	  <class name="testscript.AdminUsersTest"/>
-	  <class name="testscript.ManageOrderTest"/>
+	  <class name="testscript.ManageOrderTest"/>	    
+	  <class name="testscript.ManageOfferCodeTest"/>
+	    
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

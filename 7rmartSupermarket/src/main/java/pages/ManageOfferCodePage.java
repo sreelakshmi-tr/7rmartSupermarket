@@ -26,6 +26,7 @@ public class ManageOfferCodePage {
 	    @FindBy(xpath = "//div[@role='textbox']")WebElement descriptionField;
         @FindBy(xpath = "//input[@id='main_img']")WebElement chooseFile;
         @FindBy(xpath = "//button[@name='create']")WebElement saveButton;
+        @FindBy(xpath = "//button[@data-dismiss='alert']")WebElement alert;
 
 	    public ManageOfferCodePage(WebDriver driver) {
 			this.driver =driver;
@@ -65,11 +66,16 @@ public class ManageOfferCodePage {
 			amountField.sendKeys(amount);
 		}
 	     public void uploadOfferImage(String url)  {
-			try {
-				fileUploadUtility.fileUploadUsingRobotClass(chooseFile, url);
-			} catch (AWTException e) {
-				e.printStackTrace();
-			}
+		
+				//fileUploadUtility.fileUploadUsingRobotClass(chooseFile, url);
+				fileUploadUtility.fileUploadUsingSendKeys(chooseFile, url);
+			
+		}
+	     
+	     public boolean isAlertVisible() {
+	    	 
+	    	 return alert.isDisplayed();
+			
 		}
 	    
 	    

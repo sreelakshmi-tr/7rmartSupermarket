@@ -3,6 +3,8 @@ package testscript;
 
 
 import static org.testng.Assert.assertTrue;
+
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 import utilities.ExcelUtility;
@@ -57,10 +59,8 @@ public class LoginTest extends Base {
 
 	}
 	
-	@Test(description="verify whether the user is unable to log in with incorrect username and incorrect password")
-	public void verifyWhetherTheUserIsUnableToLoginWithIncorrectUserNameAndIncorrectPassWord() {
-		String username =ExcelUtility.getString(4, 0, "LoginPage");
-		String password=ExcelUtility.getString(4, 1, "LoginPage");
+	@Test(dataProvider = "LoginProvider" ,description="verify whether the user is unable to log in with incorrect username and incorrect password")
+	public void verifyWhetherTheUserIsUnableToLoginWithIncorrectUserNameAndIncorrectPassWord(String username,String password) {
 		
 		LoginPage loginPage = new LoginPage(driver);
 	    loginPage.enterUserNameOnUserNameField(username);
@@ -69,7 +69,13 @@ public class LoginTest extends Base {
 		
         boolean isAlertShowedUp =loginPage.isAlertVisible();
 		
-      assertTrue(isAlertShowedUp, "Home page is loaded with invalid credentials");
-
+        assertTrue(isAlertShowedUp, "Home page is loaded with invalid credentials");
+      
+	}
+	
+	@DataProvider(name="LoginProvider")
+	public Object[][] getDataFromTestData(){
+		return new Object[][] {{ExcelUtility.getString(4, 0, "LoginPage"),ExcelUtility.getString(4, 1, "LoginPage")}};
+		
 	}
 }

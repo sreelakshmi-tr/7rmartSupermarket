@@ -1,10 +1,13 @@
 package testscript;
 
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
 import pages.ManageOfferCodePage;
 import utilities.ExcelUtility;
+import utilities.GeneralUtility;
 
 public class ManageOfferCodeTest extends Base{
 @Test (description="verify whether new offer code is getting added when correct deatils are entered")
@@ -25,8 +28,11 @@ public void veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered(
     manageOfferCodePage.clickOnRadioButtonYes();
     manageOfferCodePage.enterValueToPercentageField(ExcelUtility.getInteger(1, 0, "ManageOfferCodePage"));
     manageOfferCodePage.enterValueToAmountField(ExcelUtility.getInteger(1, 1, "ManageOfferCodePage"));
-    manageOfferCodePage.uploadOfferImage(ExcelUtility.getString(4,1, "url"));
+    manageOfferCodePage.uploadOfferImage(GeneralUtility.OFFERIMAGE);
     manageOfferCodePage.clickOnSaveButton();
+    
+    boolean isOfferCodeCreated =manageOfferCodePage.isAlertVisible();
+    assertTrue(isOfferCodeCreated,"New Offer code not cretaed when correct details entered");
     
     
     

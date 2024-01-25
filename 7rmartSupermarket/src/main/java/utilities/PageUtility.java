@@ -52,11 +52,24 @@ public class PageUtility {
 	}
 	
 	public void waitForClick(WebDriver driver,WebElement element) {
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));// explicit
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 	    wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
+	public void acceptAlert(WebDriver driver) {
+		driver.switchTo().alert().accept();
+
+	}
 	
+	public void cancelAlert(WebDriver driver) {
+		driver.switchTo().alert().dismiss();//cancel
+
+	}
+	
+	public void giveInpurAndConfirmAlert(WebDriver driver,String input) {
+		driver.switchTo().alert().sendKeys(input);//to give input
+		driver.switchTo().alert().accept();
+	}
 	
 
 }

@@ -4,7 +4,6 @@ import com.github.javafaker.Faker;
 
 public class RandomInputUtility {
 	
-	public static final int OFFER_PERCENTAGE =40;
 
 	public String randomPhoneNumberGenerator() {
 		Faker faker= new Faker();

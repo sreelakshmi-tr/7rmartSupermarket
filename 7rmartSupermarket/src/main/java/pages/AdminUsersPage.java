@@ -20,7 +20,7 @@ public class AdminUsersPage {
     @FindBy(xpath = "//button[@name='Create']")WebElement saveButton;
     @FindBy(xpath = "//div[contains(@class,'card-footer center')]//a[text()='Reset']")WebElement formResetButton;
     @FindBy(xpath = "//div[contains(@class,'alert-success')]")WebElement successAlert;
-
+    
 
     
 	public AdminUsersPage(WebDriver driver) {

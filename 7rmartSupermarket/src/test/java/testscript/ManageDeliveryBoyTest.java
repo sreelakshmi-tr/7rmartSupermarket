@@ -4,6 +4,7 @@ import  pages.ManageDeliveryBoyPage;
 import utilities.ExcelUtility;
 
 import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertNotEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -35,7 +36,7 @@ public class ManageDeliveryBoyTest extends Base{
 		
 	}
 	
-	@Test
+	@Test(description="Verify whether no delivery boy is present in the list for an invalid email id")
 	public void verifyNoDeliverBoyPresntInTheListForAnInValidEmail() {
 		
 		
@@ -163,7 +164,7 @@ public class ManageDeliveryBoyTest extends Base{
 		
 	}
 	
-	@Test
+	@Test(description="Verify whether the delivery boy is  available in the list for valid phone number")
     public void verifyAnyDeliverBoyPresentInTheListForAValidePhoneNumber() {
 		
 		
@@ -186,6 +187,31 @@ public class ManageDeliveryBoyTest extends Base{
         boolean isResultPresent= manageDeliveryBoyPage.isResultAvailable();
         
         assertTrue(isResultPresent,"No delivery boy details shown for a valid phone number");
+		
+	}
+	
+	@Test(description="Verify whether the delivery boy status is getting changed by the status button click")
+    public void verifyDeliverBoyStatusGettingChangedByStatusButtonClick() {
+		
+		
+		ManageDeliveryBoyPage manageDeliveryBoyPage= new ManageDeliveryBoyPage(driver);
+		String username =ExcelUtility.getString(1, 0, "LoginPage");
+		String password=ExcelUtility.getString(1, 1, "LoginPage");
+		
+		LoginPage loginPage = new LoginPage(driver);
+	    loginPage.enterUserNameOnUserNameField(username);
+	    loginPage.enterPassWordOnPassWordFeild(password);
+	    loginPage.clickOnSignInButton();
+        loginPage.navigateToAPage(ExcelUtility.getString(1, 1, "url"));
+       
+		String oldStatus= manageDeliveryBoyPage.currentStatus();
+
+        manageDeliveryBoyPage.clickOnStatusButton();
+        
+		String newStatus= manageDeliveryBoyPage.currentStatus();
+
+
+        assertNotEquals(oldStatus, newStatus,"Delivery boy status didn't change by click on status button");
 		
 	}
 }

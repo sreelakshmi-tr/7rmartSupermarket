@@ -6,12 +6,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.PageUtility;
 import utilities.RandomInputUtility;
+import utilities.WaitUtility;
 
 
 public class ManageDeliveryBoyPage {
 	WebDriver driver;
 	PageUtility pageUtility;
 	RandomInputUtility randomInputUtility;
+	WaitUtility waitUtility;
 	@FindBy(xpath = "//a[@onclick='click_button(2)']")WebElement searchMenuButton;
 	@FindBy(xpath = "//input[@placeholder='Email']")WebElement emailField;
 	@FindBy(xpath = "//input[@placeholder='Name']")WebElement nameField;
@@ -25,13 +27,15 @@ public class ManageDeliveryBoyPage {
     @FindBy(xpath = "//button[text()='Save']")WebElement saveButton;
     @FindBy(xpath = "//div[contains(@class,'alert-success')]")WebElement addSuccessAlert;
     @FindBy(xpath = "//input[@id='username']")WebElement newUserNameField;
-
+    @FindBy(xpath = "//table//tbody//tr[1]//td[6]")WebElement statusButton;
+    @FindBy(xpath = "//button[@data-dismiss=\"alert\"]")WebElement alert;
 	
 	public ManageDeliveryBoyPage(WebDriver driver) {
 		this.driver =driver;
 		PageFactory.initElements(driver,this );
 		pageUtility = new PageUtility();
 		randomInputUtility = new RandomInputUtility();
+		waitUtility = new WaitUtility();
 	}
 	
 	
@@ -92,4 +96,17 @@ public class ManageDeliveryBoyPage {
 		pageUtility.waitForClick(driver, saveButton);	 
 	    pageUtility.elementClick(driver, saveButton);
     }
+    
+    public void clickOnStatusButton() {
+    	waitUtility.waitForElement(driver, statusButton);
+		statusButton.click();
+	}
+    public String currentStatus() {
+    	return statusButton.getText();
+	}
+    public boolean isSuccessAlertVisible() {
+		waitUtility.waitForElement(driver, alert);
+		return alert.isDisplayed();
+	}
+	
 }
