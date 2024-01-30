@@ -29,6 +29,7 @@ public class ManageDeliveryBoyPage {
     @FindBy(xpath = "//input[@id='username']")WebElement newUserNameField;
     @FindBy(xpath = "//table//tbody//tr[1]//td[6]")WebElement statusButton;
     @FindBy(xpath = "//button[@data-dismiss=\"alert\"]")WebElement alert;
+    @FindBy(xpath = "//table//tbody//tr[1]//td[8]//a[2]")WebElement firstRowDeleteButton;
 	
 	public ManageDeliveryBoyPage(WebDriver driver) {
 		this.driver =driver;
@@ -93,8 +94,8 @@ public class ManageDeliveryBoyPage {
     
     public void clickOnSaveButton() {
     	pageUtility.scrollBy(driver);
-		pageUtility.waitForClick(driver, saveButton);	 
-	    pageUtility.elementClick(driver, saveButton);
+		waitUtility.waitForClick(driver, saveButton);	 
+	    pageUtility.elementClickUsingJavascriptExecutor(driver, saveButton);
     }
     
     public void clickOnStatusButton() {
@@ -105,6 +106,19 @@ public class ManageDeliveryBoyPage {
     	return statusButton.getText();
 	}
     public boolean isSuccessAlertVisible() {
+		waitUtility.waitForElement(driver, alert);
+		return alert.isDisplayed();
+	}
+    
+    public void deleteFirstRow() {
+		pageUtility.elementClickUsingJavascriptExecutor(driver, firstRowDeleteButton);
+	}
+    
+    public void confirmDelete() {
+		pageUtility.acceptAlert(driver);
+	}
+    
+    public boolean isDeliveryBoyDeleted() {
 		waitUtility.waitForElement(driver, alert);
 		return alert.isDisplayed();
 	}

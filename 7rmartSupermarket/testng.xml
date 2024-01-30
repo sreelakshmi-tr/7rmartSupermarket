@@ -8,6 +8,7 @@
 			  <include name="verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing"></include>
 		      <include name="verifyDeliverBoyStatusGettingChangedByStatusButtonClick"></include>	
 		      <include name="verifyAnyDeliverBoyPresentInTheListForAValidEmail"></include>	
+		      <include name="verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick"></include>
 		  </methods>
 	  </class>
       <class name="testscript.LoginTest">
@@ -18,7 +19,7 @@
 	  <class name="testscript.AdminUsersTest"/>
 	  <class name="testscript.ManageOrderTest"/>	    
 	  <class name="testscript.ManageOfferCodeTest"/>
-	    
+	  <class name="testscript.ManageProductTest"/>	    
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

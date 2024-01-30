@@ -1,14 +1,10 @@
 package utilities;
 
-import java.time.Duration;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PageUtility {
 	
@@ -45,15 +41,10 @@ public class PageUtility {
 		action.dragAndDrop(draggable, drop).perform();
 	}
 	
-	public void elementClick(WebDriver driver,WebElement element) {
+	public void elementClickUsingJavascriptExecutor(WebDriver driver,WebElement element) {
 	    JavascriptExecutor executor = (JavascriptExecutor)driver;
 	    executor.executeScript("arguments[0].click();", element);
 
-	}
-	
-	public void waitForClick(WebDriver driver,WebElement element) {
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
-	    wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
 	public void acceptAlert(WebDriver driver) {
@@ -66,7 +57,7 @@ public class PageUtility {
 
 	}
 	
-	public void giveInpurAndConfirmAlert(WebDriver driver,String input) {
+	public void giveInputAndConfirmAlert(WebDriver driver,String input) {
 		driver.switchTo().alert().sendKeys(input);//to give input
 		driver.switchTo().alert().accept();
 	}

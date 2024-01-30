@@ -40,7 +40,7 @@ public class ManageOfferCodePage {
 	       WebElement e= driver.findElement(By.xpath("//input[@id='main_img']"));
 		}
 	    public void clickOnNewButton() {
-			pageUtility.elementClick(driver, newButton);
+			pageUtility.elementClickUsingJavascriptExecutor(driver, newButton);
 		}
 	    
 	    public void enterValueToNewOfferCode() {
@@ -49,11 +49,11 @@ public class ManageOfferCodePage {
 		}
 	    
 	    public void clickOnRadioButtonYes() {
-			pageUtility.elementClick(driver, radioButtonYes);
+			pageUtility.elementClickUsingJavascriptExecutor(driver, radioButtonYes);
 		}
 	    
 	    public void clickOnSaveButton() {
-	    	pageUtility.elementClick(driver, saveButton);
+	    	pageUtility.elementClickUsingJavascriptExecutor(driver, saveButton);
 			
 		}
 	    public void enterValueToPercentageField(String percentage) {
@@ -67,7 +67,6 @@ public class ManageOfferCodePage {
 		}
 	     public void uploadOfferImage(String url)  {
 		
-				//fileUploadUtility.fileUploadUsingRobotClass(chooseFile, url);
 				fileUploadUtility.fileUploadUsingSendKeys(chooseFile, url);
 			
 		}

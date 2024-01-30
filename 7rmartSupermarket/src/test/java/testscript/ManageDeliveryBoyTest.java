@@ -12,6 +12,25 @@ import org.testng.annotations.Test;
 
 public class ManageDeliveryBoyTest extends Base{
 	
+	@Test(description="Veryfy whether Delevery boy details is getting deleted on delete button click")
+	public void verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick() {
+		ManageDeliveryBoyPage manageDeliveryBoyPage= new ManageDeliveryBoyPage(driver);
+		String username =ExcelUtility.getString(1, 0, "LoginPage");
+		String password=ExcelUtility.getString(1, 1, "LoginPage");
+		LoginPage loginPage = new LoginPage(driver);
+	    loginPage.enterUserNameOnUserNameField(username);
+	    loginPage.enterPassWordOnPassWordFeild(password);
+	    loginPage.clickOnSignInButton();
+        loginPage.navigateToAPage(ExcelUtility.getString(1, 1, "url"));
+		
+		manageDeliveryBoyPage.deleteFirstRow();
+		manageDeliveryBoyPage.confirmDelete();
+		
+		boolean isDeleveryBoyDeleted = manageDeliveryBoyPage.isDeliveryBoyDeleted();
+		
+		assertTrue(isDeleveryBoyDeleted,"Delevery boy details didn't deleted on delete button click");
+	}
+	
 	@Test(description="Verify whether no new delivery boy is getting added if the mandatory fields missing")
 	public void verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing() {
 		

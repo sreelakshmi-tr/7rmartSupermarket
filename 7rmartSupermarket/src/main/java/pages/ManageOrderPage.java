@@ -25,11 +25,11 @@ public class ManageOrderPage {
 		}
 	
 	public void clickOnSearchButton() {
-		pageUtility.elementClick(driver, searchButton);
+		pageUtility.elementClickUsingJavascriptExecutor(driver, searchButton);
 	}
 	
 	public void clickOnSearchSubmitButton() {
-		pageUtility.elementClick(driver, searchSubmitButton);
+		pageUtility.elementClickUsingJavascriptExecutor(driver, searchSubmitButton);
 	}
 
 	public void enterOrderIdOnOrderIdInputField(String orderID) {
@@ -37,17 +37,17 @@ public class ManageOrderPage {
 	}
 	
 	public void clickOnAssignDeliveryBoyButton() {
-		pageUtility.elementClick(driver, assignDeliveryBoyButton);
+		pageUtility.elementClickUsingJavascriptExecutor(driver, assignDeliveryBoyButton);
 		
 	}
 	
 	public void clickOnViewButton() {
-		pageUtility.elementClick(driver, viewButton);
+		pageUtility.elementClickUsingJavascriptExecutor(driver, viewButton);
 		
 	}
 	
 	public void clickOnPrintButton() {
-		pageUtility.elementClick(driver,printButton);
+		pageUtility.elementClickUsingJavascriptExecutor(driver,printButton);
 		
 	}
 	
