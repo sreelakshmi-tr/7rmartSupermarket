@@ -1,127 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-30T14:16:06 IST" name="Suite" finished-at="2024-01-30T14:16:55 IST" duration-ms="49742">
+  <suite started-at="2024-01-30T22:11:47 IST" name="Suite" finished-at="2024-01-30T22:11:54 IST" duration-ms="6978">
     <groups>
     </groups>
-    <test started-at="2024-01-30T14:16:06 IST" name="Test" finished-at="2024-01-30T14:16:55 IST" duration-ms="49742">
-      <class name="testscript.ManageDeliveryBoyTest">
-        <test-method is-config="true" signature="inititializeBrowser()[pri:0, instance:testscript.ManageDeliveryBoyTest@63376bed]" started-at="2024-01-30T14:16:06 IST" name="inititializeBrowser" finished-at="2024-01-30T14:16:09 IST" duration-ms="3347" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititializeBrowser -->
-        <test-method signature="verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing()[pri:0, instance:testscript.ManageDeliveryBoyTest@63376bed]" started-at="2024-01-30T14:16:09 IST" name="verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing" description="Verify whether no new delivery boy is getting added if the mandatory fields missing" finished-at="2024-01-30T14:16:13 IST" duration-ms="4454" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing -->
-        <test-method is-config="true" signature="driverQuit()[pri:0, instance:testscript.ManageDeliveryBoyTest@63376bed]" started-at="2024-01-30T14:16:14 IST" name="driverQuit" finished-at="2024-01-30T14:16:14 IST" duration-ms="284" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="inititializeBrowser()[pri:0, instance:testscript.ManageDeliveryBoyTest@63376bed]" started-at="2024-01-30T14:16:14 IST" name="inititializeBrowser" finished-at="2024-01-30T14:16:16 IST" duration-ms="2417" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititializeBrowser -->
-        <test-method signature="verifyDeliverBoyStatusGettingChangedByStatusButtonClick()[pri:0, instance:testscript.ManageDeliveryBoyTest@63376bed]" started-at="2024-01-30T14:16:16 IST" name="verifyDeliverBoyStatusGettingChangedByStatusButtonClick" description="Verify whether the delivery boy status is getting changed by the status button click" finished-at="2024-01-30T14:16:19 IST" duration-ms="2634" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDeliverBoyStatusGettingChangedByStatusButtonClick -->
-        <test-method is-config="true" signature="driverQuit()[pri:0, instance:testscript.ManageDeliveryBoyTest@63376bed]" started-at="2024-01-30T14:16:19 IST" name="driverQuit" finished-at="2024-01-30T14:16:19 IST" duration-ms="171" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="inititializeBrowser()[pri:0, instance:testscript.ManageDeliveryBoyTest@63376bed]" started-at="2024-01-30T14:16:19 IST" name="inititializeBrowser" finished-at="2024-01-30T14:16:21 IST" duration-ms="2389" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititializeBrowser -->
-        <test-method signature="verifyAnyDeliverBoyPresentInTheListForAValidEmail()[pri:0, instance:testscript.ManageDeliveryBoyTest@63376bed]" started-at="2024-01-30T14:16:21 IST" name="verifyAnyDeliverBoyPresentInTheListForAValidEmail" description="Verify whether any delivery boy is present in the list for a valid email id" finished-at="2024-01-30T14:16:23 IST" duration-ms="1954" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAnyDeliverBoyPresentInTheListForAValidEmail -->
-        <test-method is-config="true" signature="driverQuit()[pri:0, instance:testscript.ManageDeliveryBoyTest@63376bed]" started-at="2024-01-30T14:16:23 IST" name="driverQuit" finished-at="2024-01-30T14:16:24 IST" duration-ms="154" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="inititializeBrowser()[pri:0, instance:testscript.ManageDeliveryBoyTest@63376bed]" started-at="2024-01-30T14:16:24 IST" name="inititializeBrowser" finished-at="2024-01-30T14:16:26 IST" duration-ms="2267" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititializeBrowser -->
-        <test-method signature="verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick()[pri:0, instance:testscript.ManageDeliveryBoyTest@63376bed]" started-at="2024-01-30T14:16:26 IST" name="verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick" description="Veryfy whether Delevery boy details is getting deleted on delete button click" finished-at="2024-01-30T14:16:28 IST" duration-ms="2634" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick -->
-        <test-method is-config="true" signature="driverQuit()[pri:0, instance:testscript.ManageDeliveryBoyTest@63376bed]" started-at="2024-01-30T14:16:28 IST" name="driverQuit" finished-at="2024-01-30T14:16:29 IST" duration-ms="182" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-      </class> <!-- testscript.ManageDeliveryBoyTest -->
-      <class name="testscript.ManageOrderTest">
-        <test-method is-config="true" signature="inititializeBrowser()[pri:0, instance:testscript.ManageOrderTest@350aac89]" started-at="2024-01-30T14:16:38 IST" name="inititializeBrowser" finished-at="2024-01-30T14:16:40 IST" duration-ms="2126" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititializeBrowser -->
-        <test-method signature="verifyIsOrderDetailsViewableForAnExistingOrderID()[pri:0, instance:testscript.ManageOrderTest@350aac89]" started-at="2024-01-30T14:16:40 IST" name="verifyIsOrderDetailsViewableForAnExistingOrderID" description="Veryfing able to see the details of an existing order number" finished-at="2024-01-30T14:16:45 IST" duration-ms="4461" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyIsOrderDetailsViewableForAnExistingOrderID -->
-        <test-method is-config="true" signature="driverQuit()[pri:0, instance:testscript.ManageOrderTest@350aac89]" started-at="2024-01-30T14:16:45 IST" name="driverQuit" finished-at="2024-01-30T14:16:45 IST" duration-ms="177" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-      </class> <!-- testscript.ManageOrderTest -->
-      <class name="testscript.ManageProductTest">
-        <test-method is-config="true" signature="inititializeBrowser()[pri:0, instance:testscript.ManageProductTest@17f9d882]" started-at="2024-01-30T14:16:51 IST" name="inititializeBrowser" finished-at="2024-01-30T14:16:53 IST" duration-ms="2334" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititializeBrowser -->
-        <test-method signature="verifyAnyProductIsFeaturedInTheList()[pri:0, instance:testscript.ManageProductTest@17f9d882]" started-at="2024-01-30T14:16:53 IST" name="verifyAnyProductIsFeaturedInTheList" description="Veryfy whether any product is featured out of first 20 products in the table" finished-at="2024-01-30T14:16:55 IST" duration-ms="1731" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAnyProductIsFeaturedInTheList -->
-        <test-method is-config="true" signature="driverQuit()[pri:0, instance:testscript.ManageProductTest@17f9d882]" started-at="2024-01-30T14:16:55 IST" name="driverQuit" finished-at="2024-01-30T14:16:55 IST" duration-ms="161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-      </class> <!-- testscript.ManageProductTest -->
-      <class name="testscript.ManageOfferCodeTest">
-        <test-method is-config="true" signature="inititializeBrowser()[pri:0, instance:testscript.ManageOfferCodeTest@1c5920df]" started-at="2024-01-30T14:16:45 IST" name="inititializeBrowser" finished-at="2024-01-30T14:16:47 IST" duration-ms="2324" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititializeBrowser -->
-        <test-method signature="veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered()[pri:0, instance:testscript.ManageOfferCodeTest@1c5920df]" started-at="2024-01-30T14:16:47 IST" name="veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered" description="verify whether new offer code is getting added when correct deatils are entered" finished-at="2024-01-30T14:16:51 IST" duration-ms="3840" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered -->
-        <test-method is-config="true" signature="driverQuit()[pri:0, instance:testscript.ManageOfferCodeTest@1c5920df]" started-at="2024-01-30T14:16:51 IST" name="driverQuit" finished-at="2024-01-30T14:16:51 IST" duration-ms="180" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-      </class> <!-- testscript.ManageOfferCodeTest -->
-      <class name="testscript.AdminUsersTest">
-        <test-method is-config="true" signature="inititializeBrowser()[pri:0, instance:testscript.AdminUsersTest@75437611]" started-at="2024-01-30T14:16:33 IST" name="inititializeBrowser" finished-at="2024-01-30T14:16:35 IST" duration-ms="2246" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititializeBrowser -->
-        <test-method signature="verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails()[pri:0, instance:testscript.AdminUsersTest@75437611]" started-at="2024-01-30T14:16:35 IST" name="verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails" description="Verify whether new user is getting added when entering corrrect details " finished-at="2024-01-30T14:16:38 IST" duration-ms="2702" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails -->
-        <test-method is-config="true" signature="driverQuit()[pri:0, instance:testscript.AdminUsersTest@75437611]" started-at="2024-01-30T14:16:38 IST" name="driverQuit" finished-at="2024-01-30T14:16:38 IST" duration-ms="171" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-      </class> <!-- testscript.AdminUsersTest -->
+    <test started-at="2024-01-30T22:11:47 IST" name="Test" finished-at="2024-01-30T22:11:54 IST" duration-ms="6978">
       <class name="testscript.LoginTest">
-        <test-method is-config="true" signature="inititializeBrowser()[pri:0, instance:testscript.LoginTest@742ff096]" started-at="2024-01-30T14:16:29 IST" name="inititializeBrowser" finished-at="2024-01-30T14:16:31 IST" duration-ms="2057" status="PASS">
+        <test-method is-config="true" signature="inititializeBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@13330ac6]" started-at="2024-01-30T22:11:47 IST" name="inititializeBrowser" finished-at="2024-01-30T22:11:51 IST" duration-ms="3969" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inititializeBrowser -->
-        <test-method signature="verifyWhetherTheUserIsAbleToLoginWithValidCredentials()[pri:0, instance:testscript.LoginTest@742ff096]" started-at="2024-01-30T14:16:31 IST" name="verifyWhetherTheUserIsAbleToLoginWithValidCredentials" description="verify whether the user is able to log in with correct username and correct password" finished-at="2024-01-30T14:16:33 IST" duration-ms="2070" status="PASS">
+        <test-method signature="verifyWhetherTheUserIsAbleToLoginWithValidCredentials()[pri:0, instance:testscript.LoginTest@13330ac6]" started-at="2024-01-30T22:11:51 IST" name="verifyWhetherTheUserIsAbleToLoginWithValidCredentials" description="verify whether the user is able to log in with correct username and correct password" finished-at="2024-01-30T22:11:53 IST" duration-ms="2576" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWhetherTheUserIsAbleToLoginWithValidCredentials -->
-        <test-method is-config="true" signature="driverQuit()[pri:0, instance:testscript.LoginTest@742ff096]" started-at="2024-01-30T14:16:33 IST" name="driverQuit" finished-at="2024-01-30T14:16:33 IST" duration-ms="196" status="PASS">
+        <test-method is-config="true" signature="driverQuit()[pri:0, instance:testscript.LoginTest@13330ac6]" started-at="2024-01-30T22:11:53 IST" name="driverQuit" finished-at="2024-01-30T22:11:54 IST" duration-ms="359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
