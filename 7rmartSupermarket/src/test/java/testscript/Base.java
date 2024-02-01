@@ -11,7 +11,7 @@ import org.testng.annotations.Parameters;
 public class Base {
 	public WebDriver driver;
 	
-	@BeforeMethod 
+	@BeforeMethod (alwaysRun = true)
 	@Parameters("browser")
 	public void inititializeBrowser(String browser) throws Exception {
 		

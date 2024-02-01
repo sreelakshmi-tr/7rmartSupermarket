@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results retried="2" ignored="2" total="6" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-30T22:11:47 IST" name="Suite" finished-at="2024-01-30T22:11:54 IST" duration-ms="6978">
+  <suite started-at="2024-01-31T21:51:27 IST" name="MultiBrowserTesting" finished-at="2024-01-31T21:51:46 IST" duration-ms="18296">
     <groups>
     </groups>
-    <test started-at="2024-01-30T22:11:47 IST" name="Test" finished-at="2024-01-30T22:11:54 IST" duration-ms="6978">
+    <test started-at="2024-01-31T21:51:27 IST" name="ChromeTest" finished-at="2024-01-31T21:51:45 IST" duration-ms="17774">
       <class name="testscript.LoginTest">
-        <test-method is-config="true" signature="inititializeBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@13330ac6]" started-at="2024-01-30T22:11:47 IST" name="inititializeBrowser" finished-at="2024-01-30T22:11:51 IST" duration-ms="3969" status="PASS">
+        <test-method is-config="true" signature="inititializeBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@3ad2e17]" started-at="2024-01-31T21:51:27 IST" name="inititializeBrowser" finished-at="2024-01-31T21:51:35 IST" duration-ms="7370" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,152 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inititializeBrowser -->
-        <test-method signature="verifyWhetherTheUserIsAbleToLoginWithValidCredentials()[pri:0, instance:testscript.LoginTest@13330ac6]" started-at="2024-01-30T22:11:51 IST" name="verifyWhetherTheUserIsAbleToLoginWithValidCredentials" description="verify whether the user is able to log in with correct username and correct password" finished-at="2024-01-30T22:11:53 IST" duration-ms="2576" status="PASS">
+        <test-method retried="true" signature="verifyWhetherTheUserIsAbleToLoginWithValidCredentials()[pri:0, instance:testscript.LoginTest@3ad2e17]" started-at="2024-01-31T21:51:35 IST" name="verifyWhetherTheUserIsAbleToLoginWithValidCredentials" description="verify whether the user is able to log in with correct username and correct password" finished-at="2024-01-31T21:51:35 IST" duration-ms="285" status="SKIP">
+          <exception class="org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException">
+            <message>
+              <![CDATA[No valid entries or contents found, this is not a valid OOXML (Office Open XML) file]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
+at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:145)
+at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.<init>(ZipInputStreamZipEntrySource.java:49)
+at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:106)
+at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:307)
+at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:47)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:309)
+at utilities.ExcelUtility.getString(ExcelUtility.java:26)
+at testscript.LoginTest.verifyWhetherTheUserIsAbleToLoginWithValidCredentials(LoginTest.java:16)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.zip.ZipException: Unexpected record signature: 0X9D997E40
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:260)
+at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:141)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWhetherTheUserIsAbleToLoginWithValidCredentials -->
-        <test-method is-config="true" signature="driverQuit()[pri:0, instance:testscript.LoginTest@13330ac6]" started-at="2024-01-30T22:11:53 IST" name="driverQuit" finished-at="2024-01-30T22:11:54 IST" duration-ms="359" status="PASS">
+        <test-method is-config="true" signature="driverQuit()[pri:0, instance:testscript.LoginTest@3ad2e17]" started-at="2024-01-31T21:51:35 IST" name="driverQuit" finished-at="2024-01-31T21:51:36 IST" duration-ms="467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="inititializeBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@3ad2e17]" started-at="2024-01-31T21:51:36 IST" name="inititializeBrowser" finished-at="2024-01-31T21:51:40 IST" duration-ms="4587" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inititializeBrowser -->
+        <test-method signature="verifyWhetherTheUserIsAbleToLoginWithValidCredentials()[pri:0, instance:testscript.LoginTest@3ad2e17]" started-at="2024-01-31T21:51:40 IST" name="verifyWhetherTheUserIsAbleToLoginWithValidCredentials" description="verify whether the user is able to log in with correct username and correct password" finished-at="2024-01-31T21:51:45 IST" duration-ms="4407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWhetherTheUserIsAbleToLoginWithValidCredentials -->
+        <test-method is-config="true" signature="driverQuit()[pri:0, instance:testscript.LoginTest@3ad2e17]" started-at="2024-01-31T21:51:45 IST" name="driverQuit" finished-at="2024-01-31T21:51:45 IST" duration-ms="423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
       </class> <!-- testscript.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2024-01-31T21:51:27 IST" name="EdgeTest" finished-at="2024-01-31T21:51:46 IST" duration-ms="18296">
+      <class name="testscript.LoginTest">
+        <test-method is-config="true" signature="inititializeBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@3568f9d2]" started-at="2024-01-31T21:51:27 IST" name="inititializeBrowser" finished-at="2024-01-31T21:51:35 IST" duration-ms="7416" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inititializeBrowser -->
+        <test-method retried="true" signature="verifyWhetherTheUserIsAbleToLoginWithValidCredentials()[pri:0, instance:testscript.LoginTest@3568f9d2]" started-at="2024-01-31T21:51:35 IST" name="verifyWhetherTheUserIsAbleToLoginWithValidCredentials" description="verify whether the user is able to log in with correct username and correct password" finished-at="2024-01-31T21:51:35 IST" duration-ms="300" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheet(String)" because "utilities.ExcelUtility.wb" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheet(String)" because "utilities.ExcelUtility.wb" is null
+at utilities.ExcelUtility.getString(ExcelUtility.java:31)
+at testscript.LoginTest.verifyWhetherTheUserIsAbleToLoginWithValidCredentials(LoginTest.java:16)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWhetherTheUserIsAbleToLoginWithValidCredentials -->
+        <test-method is-config="true" signature="driverQuit()[pri:0, instance:testscript.LoginTest@3568f9d2]" started-at="2024-01-31T21:51:35 IST" name="driverQuit" finished-at="2024-01-31T21:51:36 IST" duration-ms="967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="inititializeBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@3568f9d2]" started-at="2024-01-31T21:51:36 IST" name="inititializeBrowser" finished-at="2024-01-31T21:51:42 IST" duration-ms="5921" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inititializeBrowser -->
+        <test-method signature="verifyWhetherTheUserIsAbleToLoginWithValidCredentials()[pri:0, instance:testscript.LoginTest@3568f9d2]" started-at="2024-01-31T21:51:42 IST" name="verifyWhetherTheUserIsAbleToLoginWithValidCredentials" description="verify whether the user is able to log in with correct username and correct password" finished-at="2024-01-31T21:51:45 IST" duration-ms="2574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWhetherTheUserIsAbleToLoginWithValidCredentials -->
+        <test-method is-config="true" signature="driverQuit()[pri:0, instance:testscript.LoginTest@3568f9d2]" started-at="2024-01-31T21:51:45 IST" name="driverQuit" finished-at="2024-01-31T21:51:46 IST" duration-ms="952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+      </class> <!-- testscript.LoginTest -->
+    </test> <!-- EdgeTest -->
+  </suite> <!-- MultiBrowserTesting -->
 </testng-results>
