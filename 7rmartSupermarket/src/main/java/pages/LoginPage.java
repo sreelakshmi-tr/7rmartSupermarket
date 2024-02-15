@@ -11,12 +11,12 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 	
 	WebDriver driver;
-	@FindBy(xpath="//input[@name='username']") WebElement userNameField;
-	@FindBy(xpath="//input[@placeholder='Password']") WebElement passWordField;
-	@FindBy(xpath="//button[@type='submit']") WebElement signInButton;
-	@FindBy(xpath="//li[text()='Dashboard']") WebElement dashBoard;
-	@FindAll({@FindBy(xpath = "//a[@class='small-box-footer']")})List<WebElement> dashboardTiles;
-	@FindBy(xpath = "//div[contains(@class,'alert-danger')]")WebElement alert;
+	@FindBy(xpath="//input[@name='username']")private WebElement userNameField;
+	@FindBy(xpath="//input[@placeholder='Password']")private WebElement passWordField;
+	@FindBy(xpath="//button[@type='submit']")private WebElement signInButton;
+	@FindBy(xpath="//li[text()='Dashboard']")private WebElement dashBoard;
+	@FindAll({@FindBy(xpath = "//a[@class='small-box-footer']")})private List<WebElement> dashboardTiles;
+	@FindBy(xpath = "//div[contains(@class,'alert-danger')]")private WebElement alert;
 
 	public LoginPage(WebDriver driver) {
 	this.driver =driver;

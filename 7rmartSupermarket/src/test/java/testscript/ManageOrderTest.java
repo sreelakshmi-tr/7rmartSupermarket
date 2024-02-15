@@ -10,7 +10,7 @@ import utilities.ExcelUtility;
 
 public class ManageOrderTest extends Base {
     
-	@Test(description="Veryfing able to see the details of an existing order number")
+	@Test(retryAnalyzer =retry.Retry.class,groups= {"Regression"} ,description="Veryfing able to see the details of an existing order number")
 	public void verifyIsOrderDetailsViewableForAnExistingOrderID() {
 		
 		String username =ExcelUtility.getString(1, 0, "LoginPage");

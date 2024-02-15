@@ -4,18 +4,6 @@
   <listeners>
     <listener class-name="generate.report.Listeners"/>
   </listeners>
-  <test thread-count="2" parallel="tests" name="ChromeTest(failed)">
-    <parameter name="browser" value="Chrome"/>
-    <classes>
-      <class name="testscript.LoginTest">
-        <methods>
-          <include name="verifyWhetherTheUserIsAbleToLoginWithValidCredentials"/>
-          <include name="inititializeBrowser"/>
-          <include name="driverQuit"/>
-        </methods>
-      </class> <!-- testscript.LoginTest -->
-    </classes>
-  </test> <!-- ChromeTest(failed) -->
   <test thread-count="2" parallel="tests" name="EdgeTest(failed)">
     <parameter name="browser" value="Edge"/>
     <classes>
@@ -28,4 +16,16 @@
       </class> <!-- testscript.LoginTest -->
     </classes>
   </test> <!-- EdgeTest(failed) -->
+  <test thread-count="2" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testscript.LoginTest">
+        <methods>
+          <include name="verifyWhetherTheUserIsAbleToLoginWithValidCredentials"/>
+          <include name="inititializeBrowser"/>
+          <include name="driverQuit"/>
+        </methods>
+      </class> <!-- testscript.LoginTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [MultiBrowserTesting] -->

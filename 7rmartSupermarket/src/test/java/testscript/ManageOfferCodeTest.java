@@ -10,7 +10,7 @@ import utilities.ExcelUtility;
 import utilities.GeneralUtility;
 
 public class ManageOfferCodeTest extends Base{
-@Test (description="verify whether new offer code is getting added when correct deatils are entered")
+@Test(retryAnalyzer =retry.Retry.class,groups= {"Regression"} ,description="verify whether new offer code is getting added when correct deatils are entered")
 public void veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered() {
 	String username =ExcelUtility.getString(1, 0, "LoginPage");
 	String password=ExcelUtility.getString(1, 1, "LoginPage");

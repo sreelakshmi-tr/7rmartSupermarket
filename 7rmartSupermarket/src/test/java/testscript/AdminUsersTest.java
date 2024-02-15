@@ -12,7 +12,7 @@ import utilities.ExcelUtility;
 public class AdminUsersTest extends Base {
 	
 	
-    @Test(description="Verify whether new user is getting added when entering corrrect details ")
+    @Test(retryAnalyzer =retry.Retry.class,groups= {"Regression"} ,description="Verify whether new user is getting added when entering corrrect details ")
 	public void verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails() {
 		
 		String username =ExcelUtility.getString(1, 0, "LoginPage");

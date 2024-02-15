@@ -18,15 +18,15 @@ public class ManageOfferCodePage {
 	    PageUtility pageUtility;
 	    RandomInputUtility randomInputUtility;
 	    FileUploadUtility fileUploadUtility;
-	    @FindBy(xpath = "//a[@onclick='click_button(1)']")WebElement newButton;
-	    @FindBy(xpath = "//input[@id='offer_code']")WebElement offerCodeField;
-	    @FindBy(xpath = "//input[@value='yes']")WebElement radioButtonYes;
-	    @FindBy(xpath = "//input[@placeholder='Percentage']")WebElement percentageField;
-	    @FindBy(xpath = "//input[@placeholder='Amount']")WebElement amountField;
-	    @FindBy(xpath = "//div[@role='textbox']")WebElement descriptionField;
-        @FindBy(xpath = "//input[@id='main_img']")WebElement chooseFile;
-        @FindBy(xpath = "//button[@name='create']")WebElement saveButton;
-        @FindBy(xpath = "//button[@data-dismiss='alert']")WebElement alert;
+	    @FindBy(xpath = "//a[@onclick='click_button(1)']")private WebElement newButton;
+	    @FindBy(xpath = "//input[@id='offer_code']")private WebElement offerCodeField;
+	    @FindBy(xpath = "//input[@value='yes']")private WebElement radioButtonYes;
+	    @FindBy(xpath = "//input[@placeholder='Percentage']")private WebElement percentageField;
+	    @FindBy(xpath = "//input[@placeholder='Amount']")private WebElement amountField;
+	    @FindBy(xpath = "//div[@role='textbox']")private WebElement descriptionField;
+        @FindBy(xpath = "//input[@id='main_img']")private WebElement chooseFile;
+        @FindBy(xpath = "//button[@name='create']")private WebElement saveButton;
+        @FindBy(xpath = "//button[@data-dismiss='alert']")private WebElement alert;
 
 	    public ManageOfferCodePage(WebDriver driver) {
 			this.driver =driver;

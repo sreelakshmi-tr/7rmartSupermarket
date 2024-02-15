@@ -12,14 +12,14 @@ public class AdminUsersPage {
     WebDriver driver;
     PageUtility pageUtility;
     RandomInputUtility randomInputUtility;
-    @FindBy(xpath = "//a[@onclick='click_button(1)']")WebElement newButton;
-    @FindBy(xpath = "//a[@onclick='click_button(2)']")WebElement searchButton;
-    @FindBy(xpath = "//input[@id='username']")WebElement userNameField;
-    @FindBy(xpath = "//input[@id='password']")WebElement passwordField;
+    @FindBy(xpath = "//a[@onclick='click_button(1)']")private WebElement newButton;
+    @FindBy(xpath = "//a[@onclick='click_button(2)']")private WebElement searchButton;
+    @FindBy(xpath = "//input[@id='username']")private WebElement userNameField;
+    @FindBy(xpath = "//input[@id='password']")private WebElement passwordField;
     @FindBy(xpath = "//select[@name='user_type']//child::option")List<WebElement> userTypeOptions;
-    @FindBy(xpath = "//button[@name='Create']")WebElement saveButton;
-    @FindBy(xpath = "//div[contains(@class,'card-footer center')]//a[text()='Reset']")WebElement formResetButton;
-    @FindBy(xpath = "//div[contains(@class,'alert-success')]")WebElement successAlert;
+    @FindBy(xpath = "//button[@name='Create']")private WebElement saveButton;
+    @FindBy(xpath = "//div[contains(@class,'card-footer center')]//a[text()='Reset']")private WebElement formResetButton;
+    @FindBy(xpath = "//div[contains(@class,'alert-success')]")private WebElement successAlert;
     
 
     

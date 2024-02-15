@@ -10,13 +10,13 @@ import utilities.PageUtility;
 public class ManageOrderPage {
 	WebDriver driver;
 	PageUtility pageUtility;
-	@FindBy(xpath = "//a[@onclick='click_button(2)']")WebElement searchButton;
-	@FindBy(xpath = "//input[@placeholder='Order Id']")WebElement orderIdInputField;
-	@FindBy(xpath = "//button[@type='submit' and @name='Search']")WebElement searchSubmitButton;
-	@FindBy(xpath = "//table//tbody//td[1]")WebElement searchResultOrderID;
-	@FindBy(xpath = "//a[ contains(text(),'Assign')]")WebElement assignDeliveryBoyButton;
-	@FindBy(xpath = "//a[ contains(text(),'View')]")WebElement viewButton;
-	@FindBy(xpath = "//a[@onclick='javascript:window.print();']")WebElement printButton;
+	@FindBy(xpath = "//a[@onclick='click_button(2)']")private WebElement searchButton;
+	@FindBy(xpath = "//input[@placeholder='Order Id']")private WebElement orderIdInputField;
+	@FindBy(xpath = "//button[@type='submit' and @name='Search']")private WebElement searchSubmitButton;
+	@FindBy(xpath = "//table//tbody//td[1]")private WebElement searchResultOrderID;
+	@FindBy(xpath = "//a[ contains(text(),'Assign')]")private WebElement assignDeliveryBoyButton;
+	@FindBy(xpath = "//a[ contains(text(),'View')]")private WebElement viewButton;
+	@FindBy(xpath = "//a[@onclick='javascript:window.print();']")private WebElement printButton;
 
 	public ManageOrderPage(WebDriver driver) {
 		this.driver =driver;

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jan 31 21:51:27 IST 2024</td>
+<td>Started on:</td><td>Thu Feb 01 22:43:15 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>17 seconds (17774 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9305 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -78,7 +78,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='testscript.LoginTest.verifyWhetherTheUserIsAbleToLoginWithValidCredentials()'><b>verifyWhetherTheUserIsAbleToLoginWithValidCredentials</b><br>Test class: testscript.LoginTest<br>Test method: verify whether the user is able to log in with correct username and correct password</td>
 <td></td>
-<td>4</td>
+<td>2</td>
 <td>testscript.LoginTest@3ad2e17</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -91,33 +91,17 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testscript.LoginTest.verifyWhetherTheUserIsAbleToLoginWithValidCredentials()'><b>verifyWhetherTheUserIsAbleToLoginWithValidCredentials</b><br>Test class: testscript.LoginTest<br>Test method: verify whether the user is able to log in with correct username and correct password</td>
-<td><div><pre>org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
-	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:145)
-	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:49)
-	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:106)
-	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:307)
-	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:47)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:309)
-	at utilities.ExcelUtility.getString(ExcelUtility.java:26)
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheet(String)&quot; because &quot;utilities.ExcelUtility.wb&quot; is null
+	at utilities.ExcelUtility.getString(ExcelUtility.java:31)
 	at testscript.LoginTest.verifyWhetherTheUserIsAbleToLoginWithValidCredentials(LoginTest.java:16)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.util.zip.ZipException: Unexpected record signature: 0X9D997E40
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:260)
-	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:141)
-	... 29 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1236670598", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1236670598'><pre>org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
-	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:145)
-	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:49)
-	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:106)
-	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:307)
-	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:47)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:309)
-	at utilities.ExcelUtility.getString(ExcelUtility.java:26)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace10834407", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace10834407'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheet(String)&quot; because &quot;utilities.ExcelUtility.wb&quot; is null
+	at utilities.ExcelUtility.getString(ExcelUtility.java:31)
 	at testscript.LoginTest.verifyWhetherTheUserIsAbleToLoginWithValidCredentials(LoginTest.java:16)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -141,10 +125,6 @@ Caused by: java.util.zip.ZipException: Unexpected record signature: 0X9D997E40
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.util.zip.ZipException: Unexpected record signature: 0X9D997E40
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:260)
-	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:141)
-	... 29 more
 </pre></div></td>
 <td>0</td>
 <td>testscript.LoginTest@3ad2e17</td></tr>

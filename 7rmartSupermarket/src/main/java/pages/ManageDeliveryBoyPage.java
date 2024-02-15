@@ -14,22 +14,22 @@ public class ManageDeliveryBoyPage {
 	PageUtility pageUtility;
 	RandomInputUtility randomInputUtility;
 	WaitUtility waitUtility;
-	@FindBy(xpath = "//a[@onclick='click_button(2)']")WebElement searchMenuButton;
-	@FindBy(xpath = "//input[@placeholder='Email']")WebElement emailField;
-	@FindBy(xpath = "//input[@placeholder='Name']")WebElement nameField;
-	@FindBy(xpath = "//input[contains(@placeholder,'Phone')]")WebElement phoneNumberField;
-	@FindBy(xpath = "//button[@name='Search']")WebElement searchSubmitButton;
-	@FindBy(xpath = "//a[text()='Reset']")WebElement ResetSubmitButton;
-	@FindBy(xpath = "//table//center")WebElement resultNotFoundMessage;
-	@FindBy(xpath = "//table//td[5]")WebElement resultFound;
-	@FindBy(xpath = "//a[@onclick='click_button(1)']")WebElement newButton;
-	@FindBy(xpath = "//input[@placeholder='Enter the Name']")WebElement newName;
-    @FindBy(xpath = "//button[text()='Save']")WebElement saveButton;
-    @FindBy(xpath = "//div[contains(@class,'alert-success')]")WebElement addSuccessAlert;
-    @FindBy(xpath = "//input[@id='username']")WebElement newUserNameField;
-    @FindBy(xpath = "//table//tbody//tr[1]//td[6]")WebElement statusButton;
-    @FindBy(xpath = "//button[@data-dismiss=\"alert\"]")WebElement alert;
-    @FindBy(xpath = "//table//tbody//tr[1]//td[8]//a[2]")WebElement firstRowDeleteButton;
+	@FindBy(xpath = "//a[@onclick='click_button(2)']")private WebElement searchMenuButton;
+	@FindBy(xpath = "//input[@placeholder='Email']")private WebElement emailField;
+	@FindBy(xpath = "//input[@placeholder='Name']")private WebElement nameField;
+	@FindBy(xpath = "//input[contains(@placeholder,'Phone')]")private WebElement phoneNumberField;
+	@FindBy(xpath = "//button[@name='Search']")private WebElement searchSubmitButton;
+	@FindBy(xpath = "//a[text()='Reset']")private WebElement ResetSubmitButton;
+	@FindBy(xpath = "//table//center")private WebElement resultNotFoundMessage;
+	@FindBy(xpath = "//table//td[5]")private WebElement resultFound;
+	@FindBy(xpath = "//a[@onclick='click_button(1)']")private WebElement newButton;
+	@FindBy(xpath = "//input[@placeholder='Enter the Name']")private WebElement newName;
+    @FindBy(xpath = "//button[text()='Save']")private WebElement saveButton;
+    @FindBy(xpath = "//div[contains(@class,'alert-success')]")private WebElement addSuccessAlert;
+    @FindBy(xpath = "//input[@id='username']")private WebElement newUserNameField;
+    @FindBy(xpath = "//table//tbody//tr[1]//td[6]")private WebElement statusButton;
+    @FindBy(xpath = "//button[@data-dismiss=\"alert\"]")private WebElement alert;
+    @FindBy(xpath = "//table//tbody//tr[1]//td[8]//a[2]")private WebElement firstRowDeleteButton;
 	
 	public ManageDeliveryBoyPage(WebDriver driver) {
 		this.driver =driver;

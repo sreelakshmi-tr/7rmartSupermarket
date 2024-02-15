@@ -19,7 +19,7 @@ public class ManageProductPage {
 	RandomInputUtility randomInputUtility;
 	
 	
-	@FindAll({@FindBy(xpath = "//table//tbody//td[8]//span") })List<WebElement> featuredButton;
+	@FindAll({@FindBy(xpath = "//table//tbody//td[8]//span") })private List<WebElement> featuredButton;
 	
 	public ManageProductPage(WebDriver driver) {
 		this.driver =driver;

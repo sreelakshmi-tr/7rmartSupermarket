@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 public class ManageDeliveryBoyTest extends Base{
 	
-	@Test(description="Veryfy whether Delevery boy details is getting deleted on delete button click")
+	@Test(retryAnalyzer =retry.Retry.class,groups= {"Regression"} ,description="Veryfy whether Delevery boy details is getting deleted on delete button click")
 	public void verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick() {
 		ManageDeliveryBoyPage manageDeliveryBoyPage= new ManageDeliveryBoyPage(driver);
 		String username =ExcelUtility.getString(1, 0, "LoginPage");
@@ -31,7 +31,7 @@ public class ManageDeliveryBoyTest extends Base{
 		assertTrue(isDeleveryBoyDeleted,"Delevery boy details didn't deleted on delete button click");
 	}
 	
-	@Test(description="Verify whether no new delivery boy is getting added if the mandatory fields missing")
+	@Test(retryAnalyzer =retry.Retry.class,groups= {"Regression"} ,description="Verify whether no new delivery boy is getting added if the mandatory fields missing")
 	public void verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing() {
 		
 
@@ -55,7 +55,7 @@ public class ManageDeliveryBoyTest extends Base{
 		
 	}
 	
-	@Test(description="Verify whether no delivery boy is present in the list for an invalid email id")
+	@Test(retryAnalyzer =retry.Retry.class,description="Verify whether no delivery boy is present in the list for an invalid email id")
 	public void verifyNoDeliverBoyPresntInTheListForAnInValidEmail() {
 		
 		
@@ -79,7 +79,7 @@ public class ManageDeliveryBoyTest extends Base{
 		
 	}
 	
-	@Test(description="Verify whether any delivery boy is present in the list for a valid email id")
+	@Test(retryAnalyzer =retry.Retry.class,groups= {"Regression"} ,description="Verify whether any delivery boy is present in the list for a valid email id")
     public void verifyAnyDeliverBoyPresentInTheListForAValidEmail() {
 		
 		
@@ -104,7 +104,7 @@ public class ManageDeliveryBoyTest extends Base{
 		
 	}
 
-	@Test(description="Verify whether no delivery boy is present in the list for an invalid name")
+	@Test(retryAnalyzer =retry.Retry.class,description="Verify whether no delivery boy is present in the list for an invalid name")
 	public void verifyNoDeliverBoyPresntInTheListForAnInValidName() {
 		
 		
@@ -130,7 +130,7 @@ public class ManageDeliveryBoyTest extends Base{
 		
 	}
 	
-	@Test(description="Verify whether any delivery boy is present in the list for a valid name")
+	@Test(retryAnalyzer =retry.Retry.class,description="Verify whether any delivery boy is present in the list for a valid name")
     public void verifyAnyDeliverBoyPresentInTheListForAValidName() {
 		
 		
@@ -157,7 +157,7 @@ public class ManageDeliveryBoyTest extends Base{
 	}
 	
 
-	@Test(description="Verify whether the delivery boy is not available in the list with invalid phone number")
+	@Test(retryAnalyzer =retry.Retry.class,description="Verify whether the delivery boy is not available in the list with invalid phone number")
 	public void verifyNoDeliverBoyPresntInTheListForAnInValidPhoneNumber() {
 		
 		
@@ -183,7 +183,7 @@ public class ManageDeliveryBoyTest extends Base{
 		
 	}
 	
-	@Test(description="Verify whether the delivery boy is  available in the list for valid phone number")
+	@Test(retryAnalyzer =retry.Retry.class,description="Verify whether the delivery boy is  available in the list for valid phone number")
     public void verifyAnyDeliverBoyPresentInTheListForAValidePhoneNumber() {
 		
 		
@@ -209,7 +209,7 @@ public class ManageDeliveryBoyTest extends Base{
 		
 	}
 	
-	@Test(description="Verify whether the delivery boy status is getting changed by the status button click")
+	@Test(retryAnalyzer =retry.Retry.class,groups= {"Regression"} ,description="Verify whether the delivery boy status is getting changed by the status button click")
     public void verifyDeliverBoyStatusGettingChangedByStatusButtonClick() {
 		
 		
