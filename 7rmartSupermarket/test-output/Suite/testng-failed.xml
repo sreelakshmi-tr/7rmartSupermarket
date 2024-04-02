@@ -3,17 +3,17 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="Chrome"/>
   <listeners>
-    <listener class-name="generate.report.Listeners"/>
+    <listener class-name="listerners.ExtentReportListener"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testscript.LoginTest">
+      <class name="testscript.ManageDeliveryBoyTest">
         <methods>
-          <include name="verifyWhetherTheUserIsAbleToLoginWithValidCredentials"/>
+          <include name="verifyDeliverBoyStatusGettingChangedByStatusButtonClick"/>
           <include name="inititializeBrowser"/>
           <include name="browserQuit"/>
         </methods>
-      </class> <!-- testscript.LoginTest -->
+      </class> <!-- testscript.ManageDeliveryBoyTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

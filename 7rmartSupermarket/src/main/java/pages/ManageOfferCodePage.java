@@ -1,6 +1,5 @@
 package pages;
 
-import java.awt.AWTException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,14 +8,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utilities.FileUploadUtility;
+import utilities.GeneralUtility;
 import utilities.PageUtility;
-import utilities.RandomInputUtility;
 
 
 public class ManageOfferCodePage {
 	  WebDriver driver;
 	    PageUtility pageUtility;
-	    RandomInputUtility randomInputUtility;
+	    GeneralUtility generalUtility;
 	    FileUploadUtility fileUploadUtility;
 	    @FindBy(xpath = "//a[@onclick='click_button(1)']")private WebElement newButton;
 	    @FindBy(xpath = "//input[@id='offer_code']")private WebElement offerCodeField;
@@ -32,7 +31,7 @@ public class ManageOfferCodePage {
 			this.driver =driver;
 			PageFactory.initElements(driver,this );
 	        pageUtility = new PageUtility();
-	        randomInputUtility = new RandomInputUtility(); 
+	        generalUtility = new GeneralUtility(); 
 	        fileUploadUtility = new FileUploadUtility();
 		}
 	    
@@ -45,7 +44,7 @@ public class ManageOfferCodePage {
 	    
 	    public void enterValueToNewOfferCode() {
 	    	
-	    	offerCodeField.sendKeys(randomInputUtility.randomPasswordGenerator());
+	    	offerCodeField.sendKeys(generalUtility.randomPasswordGenerator());
 		}
 	    
 	    public void clickOnRadioButtonYes() {

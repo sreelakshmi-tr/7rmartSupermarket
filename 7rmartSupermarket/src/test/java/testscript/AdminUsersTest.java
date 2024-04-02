@@ -15,19 +15,15 @@ public class AdminUsersTest extends Base {
     @Test(retryAnalyzer =retry.Retry.class,groups= {"Regression"} ,description="Verify whether new user is getting added when entering corrrect details ")
 	public void verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails() {
 		
-		String username =ExcelUtility.getString(1, 0, "LoginPage");
-		String password=ExcelUtility.getString(1, 1, "LoginPage");
+		
         AdminUsersPage adminUsersPage = new AdminUsersPage(driver);
-
 		String newUserName=adminUsersPage.getNewUserName();
 		String newPassWord=adminUsersPage.getNewPassword();
 		String newUserType=ExcelUtility.getString(1, 2, "AdminUsersPage");
 				
 		
 		LoginPage loginPage = new LoginPage(driver);
-	    loginPage.enterUserNameOnUserNameField(username);
-	    loginPage.enterPassWordOnPassWordFeild(password);
-	    loginPage.clickOnSignInButton();
+	    loginPage.login();
         loginPage.navigateToAPage(ExcelUtility.getString(0,1, "url"));
        
         

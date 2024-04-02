@@ -3,13 +3,13 @@
 <suite name="Suite">
 <parameter name="browser" value="Chrome"></parameter>
 <listeners>
-	<listener class-name="generate.report.Listeners"></listener>
+	<listener class-name="listerners.ExtentReportListener"></listener>
 </listeners>	
   <test thread-count="5" name="Test">
     <classes>
-   <class name="testscript.MobileSliderTest">
+   <class name="testscript.ManageDeliveryBoyTest">
 		  <methods>
-			  <include name="verifyWhetherMobleSliderPageHeadingIsCorrect"></include>
+			  <include name="verifyDeliverBoyStatusGettingChangedByStatusButtonClick"></include>
 		  </methods>
 	  </class>	
 	 </classes>

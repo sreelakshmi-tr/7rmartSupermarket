@@ -15,12 +15,8 @@ public class ManageDeliveryBoyTest extends Base{
 	@Test(retryAnalyzer =retry.Retry.class,groups= {"Regression"} ,description="Veryfy whether Delevery boy details is getting deleted on delete button click")
 	public void verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick() {
 		ManageDeliveryBoyPage manageDeliveryBoyPage= new ManageDeliveryBoyPage(driver);
-		String username =ExcelUtility.getString(1, 0, "LoginPage");
-		String password=ExcelUtility.getString(1, 1, "LoginPage");
 		LoginPage loginPage = new LoginPage(driver);
-	    loginPage.enterUserNameOnUserNameField(username);
-	    loginPage.enterPassWordOnPassWordFeild(password);
-	    loginPage.clickOnSignInButton();
+	    loginPage.login();
         loginPage.navigateToAPage(ExcelUtility.getString(1, 1, "url"));
 		
 		manageDeliveryBoyPage.deleteFirstRow();
@@ -36,12 +32,8 @@ public class ManageDeliveryBoyTest extends Base{
 		
 
 		ManageDeliveryBoyPage manageDeliveryBoyPage= new ManageDeliveryBoyPage(driver);
-		String username =ExcelUtility.getString(1, 0, "LoginPage");
-		String password=ExcelUtility.getString(1, 1, "LoginPage");
 		LoginPage loginPage = new LoginPage(driver);
-	    loginPage.enterUserNameOnUserNameField(username);
-	    loginPage.enterPassWordOnPassWordFeild(password);
-	    loginPage.clickOnSignInButton();
+	    loginPage.login();
         loginPage.navigateToAPage(ExcelUtility.getString(1, 1, "url"));
        
 		manageDeliveryBoyPage.clickOnNewButton();
@@ -61,13 +53,8 @@ public class ManageDeliveryBoyTest extends Base{
 		
 		String email =ExcelUtility.getString(1, 1, "ManageDeliveryBoyPage");
 		ManageDeliveryBoyPage manageDeliveryBoyPage= new ManageDeliveryBoyPage(driver);
-		String username =ExcelUtility.getString(1, 0, "LoginPage");
-		String password=ExcelUtility.getString(1, 1, "LoginPage");
-		
 		LoginPage loginPage = new LoginPage(driver);
-	    loginPage.enterUserNameOnUserNameField(username);
-	    loginPage.enterPassWordOnPassWordFeild(password);
-	    loginPage.clickOnSignInButton();
+	    loginPage.login();
         loginPage.navigateToAPage(ExcelUtility.getString(1, 1, "url"));
         manageDeliveryBoyPage.clickOnsearchMenuButton();
         manageDeliveryBoyPage.enterEmailOnEmailField(email);
@@ -85,13 +72,8 @@ public class ManageDeliveryBoyTest extends Base{
 		
 		String email =ExcelUtility.getString(2, 1, "ManageDeliveryBoyPage");
 		ManageDeliveryBoyPage manageDeliveryBoyPage= new ManageDeliveryBoyPage(driver);
-		String username =ExcelUtility.getString(1, 0, "LoginPage");
-		String password=ExcelUtility.getString(1, 1, "LoginPage");
-		
 		LoginPage loginPage = new LoginPage(driver);
-	    loginPage.enterUserNameOnUserNameField(username);
-	    loginPage.enterPassWordOnPassWordFeild(password);
-	    loginPage.clickOnSignInButton();
+	    loginPage.login();
         loginPage.navigateToAPage(ExcelUtility.getString(1, 1, "url"));
        
         manageDeliveryBoyPage.clickOnsearchMenuButton();
@@ -110,13 +92,8 @@ public class ManageDeliveryBoyTest extends Base{
 		
 		String name =ExcelUtility.getString(4, 0, "ManageDeliveryBoyPage");
 		ManageDeliveryBoyPage manageDeliveryBoyPage= new ManageDeliveryBoyPage(driver);
-		String username =ExcelUtility.getString(1, 0, "LoginPage");
-		String password=ExcelUtility.getString(1, 1, "LoginPage");
-		
 		LoginPage loginPage = new LoginPage(driver);
-	    loginPage.enterUserNameOnUserNameField(username);
-	    loginPage.enterPassWordOnPassWordFeild(password);
-	    loginPage.clickOnSignInButton();
+	    loginPage.login();
         loginPage.navigateToAPage(ExcelUtility.getString(1, 1, "url"));
        
 		
@@ -136,13 +113,8 @@ public class ManageDeliveryBoyTest extends Base{
 		
 		String name =ExcelUtility.getString(5, 0, "ManageDeliveryBoyPage");
 		ManageDeliveryBoyPage manageDeliveryBoyPage= new ManageDeliveryBoyPage(driver);
-		String username =ExcelUtility.getString(1, 0, "LoginPage");
-		String password=ExcelUtility.getString(1, 1, "LoginPage");
-		
 		LoginPage loginPage = new LoginPage(driver);
-	    loginPage.enterUserNameOnUserNameField(username);
-	    loginPage.enterPassWordOnPassWordFeild(password);
-	    loginPage.clickOnSignInButton();
+	    loginPage.login();
         loginPage.navigateToAPage(ExcelUtility.getString(1, 1, "url"));
        
 		
@@ -163,13 +135,8 @@ public class ManageDeliveryBoyTest extends Base{
 		
 		String phoneNumber =null;
 		ManageDeliveryBoyPage manageDeliveryBoyPage= new ManageDeliveryBoyPage(driver);
-		String username =ExcelUtility.getString(1, 0, "LoginPage");
-		String password=ExcelUtility.getString(1, 1, "LoginPage");
-		
 		LoginPage loginPage = new LoginPage(driver);
-	    loginPage.enterUserNameOnUserNameField(username);
-	    loginPage.enterPassWordOnPassWordFeild(password);
-	    loginPage.clickOnSignInButton();
+	    loginPage.login();
         loginPage.navigateToAPage(ExcelUtility.getString(1, 1, "url"));
        
 		
@@ -189,13 +156,8 @@ public class ManageDeliveryBoyTest extends Base{
 		
 		String phoneNumber =ExcelUtility.getInteger(3, 2, "ManageDeliveryBoyPage");
 		ManageDeliveryBoyPage manageDeliveryBoyPage= new ManageDeliveryBoyPage(driver);
-		String username =ExcelUtility.getString(1, 0, "LoginPage");
-		String password=ExcelUtility.getString(1, 1, "LoginPage");
-		
 		LoginPage loginPage = new LoginPage(driver);
-	    loginPage.enterUserNameOnUserNameField(username);
-	    loginPage.enterPassWordOnPassWordFeild(password);
-	    loginPage.clickOnSignInButton();
+	    loginPage.login();
         loginPage.navigateToAPage(ExcelUtility.getString(1, 1, "url"));
        
 		
@@ -214,13 +176,8 @@ public class ManageDeliveryBoyTest extends Base{
 		
 		
 		ManageDeliveryBoyPage manageDeliveryBoyPage= new ManageDeliveryBoyPage(driver);
-		String username =ExcelUtility.getString(1, 0, "LoginPage");
-		String password=ExcelUtility.getString(1, 1, "LoginPage");
-		
 		LoginPage loginPage = new LoginPage(driver);
-	    loginPage.enterUserNameOnUserNameField(username);
-	    loginPage.enterPassWordOnPassWordFeild(password);
-	    loginPage.clickOnSignInButton();
+	    loginPage.login();
         loginPage.navigateToAPage(ExcelUtility.getString(1, 1, "url"));
        
 		String oldStatus= manageDeliveryBoyPage.currentStatus();

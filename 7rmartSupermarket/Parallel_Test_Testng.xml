@@ -3,7 +3,7 @@
 <suite name="Parallel Testing" parallel="tests" thread-count="2">
 <parameter name="browser" value="Chrome"></parameter>
 <listeners>
-	<listener class-name="generate.report.Listeners"></listener>
+	<listener class-name="listerners.ExtentReportListener"></listener>
 </listeners>	
   <test  name="Test1">
     <classes>

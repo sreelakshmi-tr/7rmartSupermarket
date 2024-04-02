@@ -1,4 +1,4 @@
-package generate.report;
+package listerners;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
@@ -11,7 +11,7 @@ import com.aventstack.extentreports.Status;
 
 import utilities.ExtentReportUtility;
 
-public class Listeners implements ITestListener{
+public class ExtentReportListener implements ITestListener{
  
 	ExtentTest test;
 

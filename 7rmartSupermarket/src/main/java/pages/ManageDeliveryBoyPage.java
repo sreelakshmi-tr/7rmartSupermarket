@@ -4,15 +4,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import utilities.GeneralUtility;
 import utilities.PageUtility;
-import utilities.RandomInputUtility;
 import utilities.WaitUtility;
 
 
 public class ManageDeliveryBoyPage {
 	WebDriver driver;
 	PageUtility pageUtility;
-	RandomInputUtility randomInputUtility;
+	GeneralUtility generalUtility;
 	WaitUtility waitUtility;
 	@FindBy(xpath = "//a[@onclick='click_button(2)']")private WebElement searchMenuButton;
 	@FindBy(xpath = "//input[@placeholder='Email']")private WebElement emailField;
@@ -35,7 +36,7 @@ public class ManageDeliveryBoyPage {
 		this.driver =driver;
 		PageFactory.initElements(driver,this );
 		pageUtility = new PageUtility();
-		randomInputUtility = new RandomInputUtility();
+		generalUtility = new GeneralUtility();
 		waitUtility = new WaitUtility();
 	}
 	
@@ -62,7 +63,7 @@ public class ManageDeliveryBoyPage {
 	}
     public void enterPhoneNumberOnPhoneNumberField(String phoneNumber) {
     	 if(phoneNumber==null)
-    		 phoneNumber= randomInputUtility.randomPhoneNumberGenerator();
+    		 phoneNumber= generalUtility.randomPhoneNumberGenerator();
 		
 		 phoneNumberField.sendKeys(phoneNumber);
 	}
@@ -83,7 +84,7 @@ public class ManageDeliveryBoyPage {
     }
     
     public void enterNewNameOnTheForm() {
-    	String name = randomInputUtility.randomFullNameGenerator();
+    	String name = generalUtility.randomFullNameGenerator();
     	newName.sendKeys(name);
 
     }
@@ -100,9 +101,11 @@ public class ManageDeliveryBoyPage {
     
     public void clickOnStatusButton() {
     	waitUtility.waitForElement(driver, statusButton);
-		statusButton.click();
+		//statusButton.click();
+    	pageUtility.elementClickUsingJavascriptExecutor(driver, statusButton);
 	}
     public String currentStatus() {
+    	waitUtility.waitForElementToBeClickable(driver, statusButton);
     	return statusButton.getText();
 	}
     public boolean isSuccessAlertVisible() {

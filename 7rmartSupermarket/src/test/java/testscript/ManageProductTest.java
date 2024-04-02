@@ -15,13 +15,9 @@ public class ManageProductTest extends Base {
 	public void verifyAnyProductIsFeaturedInTheList() {
 		
 		ManageProductPage manageProductPage= new ManageProductPage(driver);
-		String username =ExcelUtility.getString(1, 0, "LoginPage");
-		String password=ExcelUtility.getString(1, 1, "LoginPage");
 		LoginPage loginPage = new LoginPage(driver);
-	    loginPage.enterUserNameOnUserNameField(username);
-	    loginPage.enterPassWordOnPassWordFeild(password);
-	    loginPage.clickOnSignInButton();
-        loginPage.navigateToAPage(ExcelUtility.getString(4, 1, "url"));
+	    loginPage.login();
+	    loginPage.navigateToAPage(ExcelUtility.getString(4, 1, "url"));
         
         boolean isAnyProductFeatured=manageProductPage.checkProductIsFeatured();
         

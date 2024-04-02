@@ -3,7 +3,7 @@
 <suite name="Suite">
 <parameter name="browser" value="Chrome"></parameter>
 <listeners>
-	<listener class-name="generate.report.Listeners"></listener>
+	<listener class-name="listerners.ExtentReportListener"></listener>
 </listeners>	
   <test thread-count="5" name="Test">
     <classes>
@@ -21,9 +21,9 @@
 		  </methods>
 	  </class>	
 	<!--  <class name="testscript.AdminUsersTest"/>
-	  <class name="testscript.ManageOrderTest"/>	    
+	  <class name="testscript.ManageOrderTest"/>	 -->    
 	  <class name="testscript.ManageOfferCodeTest"/>
-	  <class name="testscript.ManageProductTest"/>	    
+	<!--   <class name="testscript.ManageProductTest"/>	    
    --> </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

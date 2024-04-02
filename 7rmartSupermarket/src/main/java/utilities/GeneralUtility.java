@@ -1,9 +1,60 @@
 package utilities;
 
+import com.github.javafaker.Faker;
+
 public class GeneralUtility {
-	public static final String TESTDATAFILE = System.getProperty("user.dir")+ "\\src\\main\\resources\\TestData.xlsx";
-
-	public static final String OFFERIMAGE = System.getProperty("user.dir")+ "\\src\\main\\resources\\code.png";
-
-	public static final String CONFIGFILE =System.getProperty("user.dir")+"\\src\\main\\resources\\config,properties";
+	public String randomPhoneNumberGenerator() {
+		Faker faker= new Faker();
+		return faker.phoneNumber().cellPhone();
+		
+	}
+	
+	public String randomPasswordGenerator() {
+		Faker faker= new Faker();
+		return faker.code().asin();
+		
+	}
+	
+	public String randomLastNameGenerator() {
+		Faker faker= new Faker();
+		return faker.name().firstName();
+		
+	}
+	
+	public String randomFirstNameGenerator() {
+		Faker faker= new Faker();
+		return faker.name().firstName();
+		
+	}
+	
+	public String randomFullNameGenerator() {
+		Faker faker= new Faker();
+		return faker.name().fullName();
+		
+	}
+	
+	public String randomStreetAddressGenerator() {
+		Faker faker= new Faker();
+		return faker.address().streetAddress();
+		
+	}
+	
+	public String randomCityNameGenerator() {
+		Faker faker= new Faker();
+		return faker.address().cityName();
+		
+	}
+	
+	
+	public String randomEmailGenerator() {
+		Faker faker= new Faker();
+		return faker.internet().emailAddress();
+		
+	}
+	
+	public String randomCountryGenerator() {
+		Faker faker= new Faker();
+		return faker.address().country();
+		
+	}
 }

@@ -1,131 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-15T16:19:54 IST" name="Suite" finished-at="2024-02-15T16:20:42 IST" duration-ms="47941">
+  <suite started-at="2024-04-02T08:21:05 IST" name="Parallel Class Testing" finished-at="2024-04-02T08:21:15 IST" duration-ms="9977">
     <groups>
       <group name="Regression">
-        <method signature="AdminUsersTest.verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails()[pri:0, instance:testscript.AdminUsersTest@6c0d9d86]" name="verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails" class="testscript.AdminUsersTest"/>
-        <method signature="LoginTest.verifyWhetherTheUserIsAbleToLoginWithValidCredentials()[pri:0, instance:testscript.LoginTest@5460cf3a]" name="verifyWhetherTheUserIsAbleToLoginWithValidCredentials" class="testscript.LoginTest"/>
-        <method signature="ManageDeliveryBoyTest.verifyAnyDeliverBoyPresentInTheListForAValidEmail()[pri:0, instance:testscript.ManageDeliveryBoyTest@53fd0d10]" name="verifyAnyDeliverBoyPresentInTheListForAValidEmail" class="testscript.ManageDeliveryBoyTest"/>
-        <method signature="ManageDeliveryBoyTest.verifyDeliverBoyStatusGettingChangedByStatusButtonClick()[pri:0, instance:testscript.ManageDeliveryBoyTest@53fd0d10]" name="verifyDeliverBoyStatusGettingChangedByStatusButtonClick" class="testscript.ManageDeliveryBoyTest"/>
-        <method signature="ManageDeliveryBoyTest.verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick()[pri:0, instance:testscript.ManageDeliveryBoyTest@53fd0d10]" name="verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick" class="testscript.ManageDeliveryBoyTest"/>
-        <method signature="ManageDeliveryBoyTest.verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing()[pri:0, instance:testscript.ManageDeliveryBoyTest@53fd0d10]" name="verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing" class="testscript.ManageDeliveryBoyTest"/>
-        <method signature="ManageOfferCodeTest.veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered()[pri:0, instance:testscript.ManageOfferCodeTest@24111ef1]" name="veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered" class="testscript.ManageOfferCodeTest"/>
-        <method signature="ManageOrderTest.verifyIsOrderDetailsViewableForAnExistingOrderID()[pri:0, instance:testscript.ManageOrderTest@4ce1d6d0]" name="verifyIsOrderDetailsViewableForAnExistingOrderID" class="testscript.ManageOrderTest"/>
-        <method signature="ManageProductTest.verifyAnyProductIsFeaturedInTheList()[pri:0, instance:testscript.ManageProductTest@1f3f02ee]" name="verifyAnyProductIsFeaturedInTheList" class="testscript.ManageProductTest"/>
-        <method signature="MobileSliderTest.verifyWhetherMobleSliderPageHeadingIsCorrect()[pri:0, instance:testscript.MobileSliderTest@1fde5d22]" name="verifyWhetherMobleSliderPageHeadingIsCorrect" class="testscript.MobileSliderTest"/>
+        <method signature="ManageOfferCodeTest.veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered()[pri:0, instance:testscript.ManageOfferCodeTest@676cf48]" name="veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered" class="testscript.ManageOfferCodeTest"/>
+        <method signature="ManageOrderTest.verifyIsOrderDetailsViewableForAnExistingOrderID()[pri:0, instance:testscript.ManageOrderTest@3f9342d4]" name="verifyIsOrderDetailsViewableForAnExistingOrderID" class="testscript.ManageOrderTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-02-15T16:19:54 IST" name="Test" finished-at="2024-02-15T16:20:42 IST" duration-ms="47941">
-      <class name="testscript.ManageDeliveryBoyTest">
-        <test-method is-config="true" signature="inititializeBrowser(java.lang.String)[pri:0, instance:testscript.ManageDeliveryBoyTest@53fd0d10]" started-at="2024-02-15T16:19:59 IST" name="inititializeBrowser" finished-at="2024-02-15T16:20:01 IST" duration-ms="2226" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititializeBrowser -->
-        <test-method signature="verifyAnyDeliverBoyPresentInTheListForAValidEmail()[pri:0, instance:testscript.ManageDeliveryBoyTest@53fd0d10]" started-at="2024-02-15T16:20:01 IST" name="verifyAnyDeliverBoyPresentInTheListForAValidEmail" description="Verify whether any delivery boy is present in the list for a valid email id" finished-at="2024-02-15T16:20:03 IST" duration-ms="2429" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAnyDeliverBoyPresentInTheListForAValidEmail -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageDeliveryBoyTest@53fd0d10]" started-at="2024-02-15T16:20:03 IST" name="browserQuit" finished-at="2024-02-15T16:20:04 IST" duration-ms="164" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAnyDeliverBoyPresentInTheListForAValidEmail status=SUCCESS method=ManageDeliveryBoyTest.verifyAnyDeliverBoyPresentInTheListForAValidEmail()[pri:0, instance:testscript.ManageDeliveryBoyTest@53fd0d10] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="inititializeBrowser(java.lang.String)[pri:0, instance:testscript.ManageDeliveryBoyTest@53fd0d10]" started-at="2024-02-15T16:20:04 IST" name="inititializeBrowser" finished-at="2024-02-15T16:20:06 IST" duration-ms="2504" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititializeBrowser -->
-        <test-method signature="verifyDeliverBoyStatusGettingChangedByStatusButtonClick()[pri:0, instance:testscript.ManageDeliveryBoyTest@53fd0d10]" started-at="2024-02-15T16:20:06 IST" name="verifyDeliverBoyStatusGettingChangedByStatusButtonClick" description="Verify whether the delivery boy status is getting changed by the status button click" finished-at="2024-02-15T16:20:08 IST" duration-ms="1641" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDeliverBoyStatusGettingChangedByStatusButtonClick -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageDeliveryBoyTest@53fd0d10]" started-at="2024-02-15T16:20:08 IST" name="browserQuit" finished-at="2024-02-15T16:20:08 IST" duration-ms="168" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyDeliverBoyStatusGettingChangedByStatusButtonClick status=SUCCESS method=ManageDeliveryBoyTest.verifyDeliverBoyStatusGettingChangedByStatusButtonClick()[pri:0, instance:testscript.ManageDeliveryBoyTest@53fd0d10] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="inititializeBrowser(java.lang.String)[pri:0, instance:testscript.ManageDeliveryBoyTest@53fd0d10]" started-at="2024-02-15T16:20:08 IST" name="inititializeBrowser" finished-at="2024-02-15T16:20:10 IST" duration-ms="2247" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititializeBrowser -->
-        <test-method signature="verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick()[pri:0, instance:testscript.ManageDeliveryBoyTest@53fd0d10]" started-at="2024-02-15T16:20:10 IST" name="verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick" description="Veryfy whether Delevery boy details is getting deleted on delete button click" finished-at="2024-02-15T16:20:12 IST" duration-ms="1363" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageDeliveryBoyTest@53fd0d10]" started-at="2024-02-15T16:20:12 IST" name="browserQuit" finished-at="2024-02-15T16:20:12 IST" duration-ms="174" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick status=SUCCESS method=ManageDeliveryBoyTest.verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick()[pri:0, instance:testscript.ManageDeliveryBoyTest@53fd0d10] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="inititializeBrowser(java.lang.String)[pri:0, instance:testscript.ManageDeliveryBoyTest@53fd0d10]" started-at="2024-02-15T16:20:12 IST" name="inititializeBrowser" finished-at="2024-02-15T16:20:14 IST" duration-ms="2220" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititializeBrowser -->
-        <test-method signature="verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing()[pri:0, instance:testscript.ManageDeliveryBoyTest@53fd0d10]" started-at="2024-02-15T16:20:14 IST" name="verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing" description="Verify whether no new delivery boy is getting added if the mandatory fields missing" finished-at="2024-02-15T16:20:16 IST" duration-ms="2194" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageDeliveryBoyTest@53fd0d10]" started-at="2024-02-15T16:20:16 IST" name="browserQuit" finished-at="2024-02-15T16:20:16 IST" duration-ms="196" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing status=SUCCESS method=ManageDeliveryBoyTest.verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing()[pri:0, instance:testscript.ManageDeliveryBoyTest@53fd0d10] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- testscript.ManageDeliveryBoyTest -->
+    <test started-at="2024-04-02T08:21:05 IST" name="Test" finished-at="2024-04-02T08:21:15 IST" duration-ms="9977">
       <class name="testscript.ManageOrderTest">
-        <test-method is-config="true" signature="inititializeBrowser(java.lang.String)[pri:0, instance:testscript.ManageOrderTest@4ce1d6d0]" started-at="2024-02-15T16:20:22 IST" name="inititializeBrowser" finished-at="2024-02-15T16:20:24 IST" duration-ms="2217" status="PASS">
+        <test-method is-config="true" signature="inititializeBrowser(java.lang.String)[pri:0, instance:testscript.ManageOrderTest@3f9342d4]" started-at="2024-04-02T08:21:05 IST" name="inititializeBrowser" finished-at="2024-04-02T08:21:08 IST" duration-ms="3389" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -136,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inititializeBrowser -->
-        <test-method signature="verifyIsOrderDetailsViewableForAnExistingOrderID()[pri:0, instance:testscript.ManageOrderTest@4ce1d6d0]" started-at="2024-02-15T16:20:24 IST" name="verifyIsOrderDetailsViewableForAnExistingOrderID" description="Veryfing able to see the details of an existing order number" finished-at="2024-02-15T16:20:28 IST" duration-ms="4230" status="PASS">
+        <test-method signature="verifyIsOrderDetailsViewableForAnExistingOrderID()[pri:0, instance:testscript.ManageOrderTest@3f9342d4]" started-at="2024-04-02T08:21:08 IST" name="verifyIsOrderDetailsViewableForAnExistingOrderID" description="Veryfing able to see the details of an existing order number" finished-at="2024-04-02T08:21:14 IST" duration-ms="6244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyIsOrderDetailsViewableForAnExistingOrderID -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageOrderTest@4ce1d6d0]" started-at="2024-02-15T16:20:28 IST" name="browserQuit" finished-at="2024-02-15T16:20:28 IST" duration-ms="181" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageOrderTest@3f9342d4]" started-at="2024-04-02T08:21:14 IST" name="browserQuit" finished-at="2024-04-02T08:21:15 IST" duration-ms="288" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyIsOrderDetailsViewableForAnExistingOrderID status=SUCCESS method=ManageOrderTest.verifyIsOrderDetailsViewableForAnExistingOrderID()[pri:0, instance:testscript.ManageOrderTest@4ce1d6d0] output={null}]]]>
+                <![CDATA[[TestResult name=verifyIsOrderDetailsViewableForAnExistingOrderID status=SUCCESS method=ManageOrderTest.verifyIsOrderDetailsViewableForAnExistingOrderID()[pri:0, instance:testscript.ManageOrderTest@3f9342d4] output={null}]]]>
               </value>
             </param>
           </params>
@@ -152,64 +38,8 @@
           </reporter-output>
         </test-method> <!-- browserQuit -->
       </class> <!-- testscript.ManageOrderTest -->
-      <class name="testscript.MobileSliderTest">
-        <test-method is-config="true" signature="inititializeBrowser(java.lang.String)[pri:0, instance:testscript.MobileSliderTest@1fde5d22]" started-at="2024-02-15T16:20:38 IST" name="inititializeBrowser" finished-at="2024-02-15T16:20:40 IST" duration-ms="2226" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititializeBrowser -->
-        <test-method signature="verifyWhetherMobleSliderPageHeadingIsCorrect()[pri:0, instance:testscript.MobileSliderTest@1fde5d22]" started-at="2024-02-15T16:20:40 IST" name="verifyWhetherMobleSliderPageHeadingIsCorrect" description="Verify whether the Mobile slider page heading is correct" finished-at="2024-02-15T16:20:42 IST" duration-ms="1635" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyWhetherMobleSliderPageHeadingIsCorrect -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.MobileSliderTest@1fde5d22]" started-at="2024-02-15T16:20:42 IST" name="browserQuit" finished-at="2024-02-15T16:20:42 IST" duration-ms="184" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyWhetherMobleSliderPageHeadingIsCorrect status=SUCCESS method=MobileSliderTest.verifyWhetherMobleSliderPageHeadingIsCorrect()[pri:0, instance:testscript.MobileSliderTest@1fde5d22] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- testscript.MobileSliderTest -->
-      <class name="testscript.ManageProductTest">
-        <test-method is-config="true" signature="inititializeBrowser(java.lang.String)[pri:0, instance:testscript.ManageProductTest@1f3f02ee]" started-at="2024-02-15T16:20:34 IST" name="inititializeBrowser" finished-at="2024-02-15T16:20:36 IST" duration-ms="2164" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititializeBrowser -->
-        <test-method signature="verifyAnyProductIsFeaturedInTheList()[pri:0, instance:testscript.ManageProductTest@1f3f02ee]" started-at="2024-02-15T16:20:36 IST" name="verifyAnyProductIsFeaturedInTheList" description="Veryfy whether any product is featured out of first 20 products in the table" finished-at="2024-02-15T16:20:37 IST" duration-ms="1549" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAnyProductIsFeaturedInTheList -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageProductTest@1f3f02ee]" started-at="2024-02-15T16:20:37 IST" name="browserQuit" finished-at="2024-02-15T16:20:38 IST" duration-ms="168" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAnyProductIsFeaturedInTheList status=SUCCESS method=ManageProductTest.verifyAnyProductIsFeaturedInTheList()[pri:0, instance:testscript.ManageProductTest@1f3f02ee] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- testscript.ManageProductTest -->
       <class name="testscript.ManageOfferCodeTest">
-        <test-method is-config="true" signature="inititializeBrowser(java.lang.String)[pri:0, instance:testscript.ManageOfferCodeTest@24111ef1]" started-at="2024-02-15T16:20:28 IST" name="inititializeBrowser" finished-at="2024-02-15T16:20:31 IST" duration-ms="2226" status="PASS">
+        <test-method is-config="true" signature="inititializeBrowser(java.lang.String)[pri:0, instance:testscript.ManageOfferCodeTest@676cf48]" started-at="2024-04-02T08:21:05 IST" name="inititializeBrowser" finished-at="2024-04-02T08:21:08 IST" duration-ms="3370" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -220,15 +50,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inititializeBrowser -->
-        <test-method signature="veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered()[pri:0, instance:testscript.ManageOfferCodeTest@24111ef1]" started-at="2024-02-15T16:20:31 IST" name="veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered" description="verify whether new offer code is getting added when correct deatils are entered" finished-at="2024-02-15T16:20:34 IST" duration-ms="2966" status="PASS">
+        <test-method signature="veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered()[pri:0, instance:testscript.ManageOfferCodeTest@676cf48]" started-at="2024-04-02T08:21:08 IST" name="veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered" description="verify whether new offer code is getting added when correct deatils are entered" finished-at="2024-04-02T08:21:12 IST" duration-ms="4191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageOfferCodeTest@24111ef1]" started-at="2024-02-15T16:20:34 IST" name="browserQuit" finished-at="2024-02-15T16:20:34 IST" duration-ms="169" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageOfferCodeTest@676cf48]" started-at="2024-04-02T08:21:13 IST" name="browserQuit" finished-at="2024-04-02T08:21:13 IST" duration-ms="244" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered status=SUCCESS method=ManageOfferCodeTest.veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered()[pri:0, instance:testscript.ManageOfferCodeTest@24111ef1] output={null}]]]>
+                <![CDATA[[TestResult name=veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered status=SUCCESS method=ManageOfferCodeTest.veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered()[pri:0, instance:testscript.ManageOfferCodeTest@676cf48] output={null}]]]>
               </value>
             </param>
           </params>
@@ -236,62 +66,6 @@
           </reporter-output>
         </test-method> <!-- browserQuit -->
       </class> <!-- testscript.ManageOfferCodeTest -->
-      <class name="testscript.AdminUsersTest">
-        <test-method is-config="true" signature="inititializeBrowser(java.lang.String)[pri:0, instance:testscript.AdminUsersTest@6c0d9d86]" started-at="2024-02-15T16:20:16 IST" name="inititializeBrowser" finished-at="2024-02-15T16:20:19 IST" duration-ms="2280" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititializeBrowser -->
-        <test-method signature="verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails()[pri:0, instance:testscript.AdminUsersTest@6c0d9d86]" started-at="2024-02-15T16:20:19 IST" name="verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails" description="Verify whether new user is getting added when entering corrrect details " finished-at="2024-02-15T16:20:22 IST" duration-ms="3004" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.AdminUsersTest@6c0d9d86]" started-at="2024-02-15T16:20:22 IST" name="browserQuit" finished-at="2024-02-15T16:20:22 IST" duration-ms="174" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails status=SUCCESS method=AdminUsersTest.verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails()[pri:0, instance:testscript.AdminUsersTest@6c0d9d86] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- testscript.AdminUsersTest -->
-      <class name="testscript.LoginTest">
-        <test-method is-config="true" signature="inititializeBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@5460cf3a]" started-at="2024-02-15T16:19:54 IST" name="inititializeBrowser" finished-at="2024-02-15T16:19:57 IST" duration-ms="3020" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititializeBrowser -->
-        <test-method signature="verifyWhetherTheUserIsAbleToLoginWithValidCredentials()[pri:0, instance:testscript.LoginTest@5460cf3a]" started-at="2024-02-15T16:19:57 IST" name="verifyWhetherTheUserIsAbleToLoginWithValidCredentials" description="verify whether the user is able to log in with correct username and correct password" finished-at="2024-02-15T16:19:58 IST" duration-ms="1669" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyWhetherTheUserIsAbleToLoginWithValidCredentials -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@5460cf3a]" started-at="2024-02-15T16:19:59 IST" name="browserQuit" finished-at="2024-02-15T16:19:59 IST" duration-ms="227" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyWhetherTheUserIsAbleToLoginWithValidCredentials status=SUCCESS method=LoginTest.verifyWhetherTheUserIsAbleToLoginWithValidCredentials()[pri:0, instance:testscript.LoginTest@5460cf3a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- testscript.LoginTest -->
     </test> <!-- Test -->
-  </suite> <!-- Suite -->
+  </suite> <!-- Parallel Class Testing -->
 </testng-results>

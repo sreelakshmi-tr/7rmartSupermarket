@@ -13,13 +13,10 @@ public class ManageOrderTest extends Base {
 	@Test(retryAnalyzer =retry.Retry.class,groups= {"Regression"} ,description="Veryfing able to see the details of an existing order number")
 	public void verifyIsOrderDetailsViewableForAnExistingOrderID() {
 		
-		String username =ExcelUtility.getString(1, 0, "LoginPage");
-		String password=ExcelUtility.getString(1, 1, "LoginPage");
+		
 		String orderID=ExcelUtility.getInteger(1, 0, "ManageOrderPage");
 		LoginPage loginPage = new LoginPage(driver);
-	    loginPage.enterUserNameOnUserNameField(username);
-	    loginPage.enterPassWordOnPassWordFeild(password);
-	    loginPage.clickOnSignInButton();
+	    loginPage.login();
         loginPage.navigateToAPage(ExcelUtility.getString(2,1, "url"));
 		
         ManageOrderPage manageOrderPage=new ManageOrderPage(driver);

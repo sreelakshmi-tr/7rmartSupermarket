@@ -8,6 +8,8 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.ExcelUtility;
+
 public class LoginPage {
 	
 	WebDriver driver;
@@ -23,7 +25,13 @@ public class LoginPage {
 	PageFactory.initElements(driver,this );
 
 	}
-	
+	public  void login() {
+		String username =ExcelUtility.getString(1, 0, "LoginPage");
+		String password=ExcelUtility.getString(1, 1, "LoginPage");      					
+	    this.enterUserNameOnUserNameField(username);
+	    this.enterPassWordOnPassWordFeild(password);
+	    this.clickOnSignInButton();
+	}
 	public void navigateToAPage(String url) {
 		
 		for(WebElement tile:dashboardTiles) {

@@ -3,17 +3,10 @@
 <suite thread-count="2" parallel="classes" name="Failed suite [Parallel Class Testing]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="Chrome"/>
   <listeners>
-    <listener class-name="generate.report.Listeners"/>
+    <listener class-name="listerners.ExtentReportListener"/>
   </listeners>
   <test thread-count="2" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="testscript.ManageOfferCodeTest">
-        <methods>
-          <include name="veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered"/>
-          <include name="inititializeBrowser"/>
-          <include name="browserQuit"/>
-        </methods>
-      </class> <!-- testscript.ManageOfferCodeTest -->
       <class name="testscript.ManageOrderTest">
         <methods>
           <include name="inititializeBrowser"/>

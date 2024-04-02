@@ -13,7 +13,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
-import utilities.GeneralUtility;
+import constants.Constants;
 import utilities.ScreenShotUtility;
 
 public class Base {
@@ -28,7 +28,7 @@ public class Base {
 		
 		try {
 			 properties = new Properties();
-			 fileInputStream = new FileInputStream(GeneralUtility.CONFIGFILE);
+			 fileInputStream = new FileInputStream(Constants.CONFIGFILE);
 			properties.load(fileInputStream);
 			
 		}catch (Exception e) {
