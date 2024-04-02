@@ -6,6 +6,11 @@
     <listener class-name="listerners.ExtentReportListener"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
     <classes>
       <class name="testscript.ManageDeliveryBoyTest">
         <methods>

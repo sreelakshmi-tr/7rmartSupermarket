@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\sreel\git\7rmartSupermarket\7rmartSupermarket\testng.xml</span>
+                    <span>C:\Users\sreel\git\7rmartSupermarket\7rmartSupermarket\Grouping_TestNg.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,40 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">12 methods, 1 failed,  2 skipped,  9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.ManageDeliveryBoyTest" class="method navigator-link" hash-for-method="verifyDeliverBoyStatusGettingChangedByStatusButtonClick">verifyDeliverBoyStatusGettingChangedByStatusButtonClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.ManageDeliveryBoyTest" class="method navigator-link" hash-for-method="verifyDeliverBoyStatusGettingChangedByStatusButtonClick">verifyDeliverBoyStatusGettingChangedByStatusButtonClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.ManageDeliveryBoyTest" class="method navigator-link" hash-for-method="verifyDeliverBoyStatusGettingChangedByStatusButtonClick">verifyDeliverBoyStatusGettingChangedByStatusButtonClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +134,41 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.ManageDeliveryBoyTest" class="method navigator-link" hash-for-method="verifyAnyDeliverBoyPresentInTheListForAValidEmail">verifyAnyDeliverBoyPresentInTheListForAValidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.ManageProductTest" class="method navigator-link" hash-for-method="verifyAnyProductIsFeaturedInTheList">verifyAnyProductIsFeaturedInTheList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.ManageDeliveryBoyTest" class="method navigator-link" hash-for-method="verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick">verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.ManageOrderTest" class="method navigator-link" hash-for-method="verifyIsOrderDetailsViewableForAnExistingOrderID">verifyIsOrderDetailsViewableForAnExistingOrderID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.ManageDeliveryBoyTest" class="method navigator-link" hash-for-method="verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing">verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.AdminUsersTest" class="method navigator-link" hash-for-method="verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails">verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.MobileSliderTest" class="method navigator-link" hash-for-method="verifyWhetherMobleSliderPageHeadingIsCorrect">verifyWhetherMobleSliderPageHeadingIsCorrect</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyWhetherTheUserIsAbleToLoginWithValidCredentials">verifyWhetherTheUserIsAbleToLoginWithValidCredentials</a> <!-- method navigator-link -->
@@ -123,6 +191,132 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testscript.ManageDeliveryBoyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDeliverBoyStatusGettingChangedByStatusButtonClick">
+                  </a> <!-- verifyDeliverBoyStatusGettingChangedByStatusButtonClick -->
+                  <span class="method-name">verifyDeliverBoyStatusGettingChangedByStatusButtonClick</span>
+                  <div class="stack-trace">java.lang.AssertionError: Delivery boy status didn&apos;t change by click on status button did not expect [Active] but found [Active]
+	at testscript.ManageDeliveryBoyTest.verifyDeliverBoyStatusGettingChangedByStatusButtonClick(ManageDeliveryBoyTest.java:190)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify whether the delivery boy status is getting changed by the status button click)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testscript.ManageDeliveryBoyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDeliverBoyStatusGettingChangedByStatusButtonClick">
+                  </a> <!-- verifyDeliverBoyStatusGettingChangedByStatusButtonClick -->
+                  <span class="method-name">verifyDeliverBoyStatusGettingChangedByStatusButtonClick</span>
+                  <div class="stack-trace">java.lang.AssertionError: Delivery boy status didn&apos;t change by click on status button did not expect [Active] but found [Active]
+	at testscript.ManageDeliveryBoyTest.verifyDeliverBoyStatusGettingChangedByStatusButtonClick(ManageDeliveryBoyTest.java:190)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify whether the delivery boy status is getting changed by the status button click)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDeliverBoyStatusGettingChangedByStatusButtonClick">
+                  </a> <!-- verifyDeliverBoyStatusGettingChangedByStatusButtonClick -->
+                  <span class="method-name">verifyDeliverBoyStatusGettingChangedByStatusButtonClick</span>
+                  <div class="stack-trace">java.lang.AssertionError: Delivery boy status didn&apos;t change by click on status button did not expect [Active] but found [Active]
+	at testscript.ManageDeliveryBoyTest.verifyDeliverBoyStatusGettingChangedByStatusButtonClick(ManageDeliveryBoyTest.java:190)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify whether the delivery boy status is getting changed by the status button click)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.AdminUsersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails">
+                  </a> <!-- verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails -->
+                  <span class="method-name">verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails</span>
+                  <em>
+(Verify whether new user is getting added when entering corrrect details )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.ManageProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAnyProductIsFeaturedInTheList">
+                  </a> <!-- verifyAnyProductIsFeaturedInTheList -->
+                  <span class="method-name">verifyAnyProductIsFeaturedInTheList</span>
+                  <em>
+(Veryfy whether any product is featured out of first 20 products in the table)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.ManageOrderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIsOrderDetailsViewableForAnExistingOrderID">
+                  </a> <!-- verifyIsOrderDetailsViewableForAnExistingOrderID -->
+                  <span class="method-name">verifyIsOrderDetailsViewableForAnExistingOrderID</span>
+                  <em>
+(Veryfing able to see the details of an existing order number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.MobileSliderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWhetherMobleSliderPageHeadingIsCorrect">
+                  </a> <!-- verifyWhetherMobleSliderPageHeadingIsCorrect -->
+                  <span class="method-name">verifyWhetherMobleSliderPageHeadingIsCorrect</span>
+                  <em>
+(Verify whether the Mobile slider page heading is correct)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -157,10 +351,45 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.ManageDeliveryBoyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAnyDeliverBoyPresentInTheListForAValidEmail">
+                  </a> <!-- verifyAnyDeliverBoyPresentInTheListForAValidEmail -->
+                  <span class="method-name">verifyAnyDeliverBoyPresentInTheListForAValidEmail</span>
+                  <em>
+(Verify whether any delivery boy is present in the list for a valid email id)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick">
+                  </a> <!-- verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick -->
+                  <span class="method-name">verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick</span>
+                  <em>
+(Veryfy whether Delevery boy details is getting deleted on delete button click)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing">
+                  </a> <!-- verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing -->
+                  <span class="method-name">verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing</span>
+                  <em>
+(Verify whether no new delivery boy is getting added if the mandatory fields missing)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\sreel\git\7rmartSupermarket\7rmartSupermarket\testng.xml</span>
+            <span class="header-content">C:\Users\sreel\git\7rmartSupermarket\7rmartSupermarket\Grouping_TestNg.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -172,13 +401,19 @@
     &lt;listener class-name=&quot;listerners.ExtentReportListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;Regression&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testscript.LoginTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;verifyWhetherTheUserIsAbleToLoginWithValidCredentials&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testscript.LoginTest --&gt;
+      &lt;class name=&quot;testscript.LoginTest&quot;/&gt;
+      &lt;class name=&quot;testscript.ManageDeliveryBoyTest&quot;/&gt;
+      &lt;class name=&quot;testscript.AdminUsersTest&quot;/&gt;
+      &lt;class name=&quot;testscript.ManageOrderTest&quot;/&gt;
       &lt;class name=&quot;testscript.ManageOfferCodeTest&quot;/&gt;
+      &lt;class name=&quot;testscript.ManageProductTest&quot;/&gt;
+      &lt;class name=&quot;testscript.MobileSliderTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -192,7 +427,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -205,6 +440,38 @@
             <div class="test-group">
               <span class="test-group-name">Regression</span>
               <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAnyDeliverBoyPresentInTheListForAValidEmail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAnyProductIsFeaturedInTheList</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyDeliverBoyStatusGettingChangedByStatusButtonClick</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyIsOrderDetailsViewableForAnExistingOrderID</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyWhetherMobleSliderPageHeadingIsCorrect</span>
+                <br/>
+              </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">verifyWhetherTheUserIsAbleToLoginWithValidCredentials</span>
                 <br/>
@@ -230,20 +497,60 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered')
-data.setCell(0, 2, 'testscript.ManageOfferCodeTest')
-data.setCell(0, 3, 2872);
+data.setCell(0, 1, 'verifyIsOrderDetailsViewableForAnExistingOrderID')
+data.setCell(0, 2, 'testscript.ManageOrderTest')
+data.setCell(0, 3, 4572);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyWhetherTheUserIsAbleToLoginWithValidCredentials')
-data.setCell(1, 2, 'testscript.LoginTest')
-data.setCell(1, 3, 1946);
+data.setCell(1, 1, 'verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails')
+data.setCell(1, 2, 'testscript.AdminUsersTest')
+data.setCell(1, 3, 3104);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing')
+data.setCell(2, 2, 'testscript.ManageDeliveryBoyTest')
+data.setCell(2, 3, 2730);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered')
+data.setCell(3, 2, 'testscript.ManageOfferCodeTest')
+data.setCell(3, 3, 2561);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyAnyDeliverBoyPresentInTheListForAValidEmail')
+data.setCell(4, 2, 'testscript.ManageDeliveryBoyTest')
+data.setCell(4, 3, 2410);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyAnyProductIsFeaturedInTheList')
+data.setCell(5, 2, 'testscript.ManageProductTest')
+data.setCell(5, 3, 1889);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick')
+data.setCell(6, 2, 'testscript.ManageDeliveryBoyTest')
+data.setCell(6, 3, 1810);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyWhetherMobleSliderPageHeadingIsCorrect')
+data.setCell(7, 2, 'testscript.MobileSliderTest')
+data.setCell(7, 3, 1478);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyDeliverBoyStatusGettingChangedByStatusButtonClick')
+data.setCell(8, 2, 'testscript.ManageDeliveryBoyTest')
+data.setCell(8, 3, 1365);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyWhetherTheUserIsAbleToLoginWithValidCredentials')
+data.setCell(9, 2, 'testscript.LoginTest')
+data.setCell(9, 3, 1343);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyDeliverBoyStatusGettingChangedByStatusButtonClick')
+data.setCell(10, 2, 'testscript.ManageDeliveryBoyTest')
+data.setCell(10, 3, 1175);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyDeliverBoyStatusGettingChangedByStatusButtonClick')
+data.setCell(11, 2, 'testscript.ManageDeliveryBoyTest')
+data.setCell(11, 3, 1147);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -258,7 +565,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">8 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -269,6 +576,21 @@ return data;
                 <span class="ignored-method-name">verifyWhetherTheUserIsUnableToLoginWithIncorrectUserNameAndIncorrectPassWord</span>
                 <br/>
                 <span class="ignored-method-name">verifyWhetherTheUserIsUnableToLoginWithCorrectUserNameAndIncorrectPassWord</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testscript.ManageDeliveryBoyTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyNoDeliverBoyPresntInTheListForAnInValidName</span>
+                <br/>
+                <span class="ignored-method-name">verifyAnyDeliverBoyPresentInTheListForAValidName</span>
+                <br/>
+                <span class="ignored-method-name">verifyAnyDeliverBoyPresentInTheListForAValidePhoneNumber</span>
+                <br/>
+                <span class="ignored-method-name">verifyNoDeliverBoyPresntInTheListForAnInValidEmail</span>
+                <br/>
+                <span class="ignored-method-name">verifyNoDeliverBoyPresntInTheListForAnInValidPhoneNumber</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -287,26 +609,163 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyWhetherTheUserIsAbleToLoginWithValidCredentials</span>
-                <span class="method-start">3114 ms</span>
+                <span class="method-start">2891 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserQuit([TestResult name=verifyWhetherTheUserIsAbleToLoginWithValidCredentials status=SUCCESS method=LoginTe...)</span>
-                <span class="method-start">5130 ms</span>
+                <span class="method-start">4306 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.ManageDeliveryBoyTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">inititializeBrowser(Chrome)</span>
+                <span class="method-start">4509 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAnyDeliverBoyPresentInTheListForAValidEmail</span>
+                <span class="method-start">6878 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyAnyDeliverBoyPresentInTheListForAValidEmail status=SUCCESS method=ManageDeliv...)</span>
+                <span class="method-start">9291 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">inititializeBrowser(Chrome)</span>
+                <span class="method-start">9493 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDeliverBoyStatusGettingChangedByStatusButtonClick</span>
+                <span class="method-start">11686 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyDeliverBoyStatusGettingChangedByStatusButtonClick status=SKIP method=ManageDe...)</span>
+                <span class="method-start">13053 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">inititializeBrowser(Chrome)</span>
+                <span class="method-start">13237 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDeliverBoyStatusGettingChangedByStatusButtonClick</span>
+                <span class="method-start">15766 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyDeliverBoyStatusGettingChangedByStatusButtonClick status=SKIP method=ManageDe...)</span>
+                <span class="method-start">16943 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">inititializeBrowser(Chrome)</span>
+                <span class="method-start">17133 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyDeliverBoyStatusGettingChangedByStatusButtonClick</span>
+                <span class="method-start">19663 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyDeliverBoyStatusGettingChangedByStatusButtonClick status=FAILURE method=Manag...)</span>
+                <span class="method-start">20822 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">inititializeBrowser(Chrome)</span>
+                <span class="method-start">21225 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick</span>
+                <span class="method-start">23451 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyIsFirstRowOfDeliveryBoyIsDeletedByDeleteButtonClick status=SUCCESS method=Man...)</span>
+                <span class="method-start">25263 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">inititializeBrowser(Chrome)</span>
+                <span class="method-start">25459 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing</span>
+                <span class="method-start">27657 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyNoNewDeliverBoyIsGettingCreatedIfMandatoryFieldsAreMissing status=SUCCESS met...)</span>
+                <span class="method-start">30388 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.AdminUsersTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">inititializeBrowser(Chrome)</span>
+                <span class="method-start">30617 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails</span>
+                <span class="method-start">32802 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails status=SUCCESS me...)</span>
+                <span class="method-start">35907 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.ManageOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">inititializeBrowser(Chrome)</span>
+                <span class="method-start">36092 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyIsOrderDetailsViewableForAnExistingOrderID</span>
+                <span class="method-start">38529 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyIsOrderDetailsViewableForAnExistingOrderID status=SUCCESS method=ManageOrderT...)</span>
+                <span class="method-start">43102 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testscript.ManageOfferCodeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">inititializeBrowser(Chrome)</span>
-                <span class="method-start">5351 ms</span>
+                <span class="method-start">43317 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered</span>
-                <span class="method-start">7743 ms</span>
+                <span class="method-start">45490 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserQuit([TestResult name=veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered status=SUCCESS ...)</span>
-                <span class="method-start">10616 ms</span>
+                <span class="method-start">48052 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.ManageProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">inititializeBrowser(Chrome)</span>
+                <span class="method-start">48235 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAnyProductIsFeaturedInTheList</span>
+                <span class="method-start">50748 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyAnyProductIsFeaturedInTheList status=SUCCESS method=ManageProductTest.verifyA...)</span>
+                <span class="method-start">52638 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.MobileSliderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">inititializeBrowser(Chrome)</span>
+                <span class="method-start">52859 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyWhetherMobleSliderPageHeadingIsCorrect</span>
+                <span class="method-start">55219 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyWhetherMobleSliderPageHeadingIsCorrect status=SUCCESS method=MobileSliderTest...)</span>
+                <span class="method-start">56698 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
