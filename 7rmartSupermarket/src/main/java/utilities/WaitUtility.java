@@ -37,7 +37,7 @@ public class WaitUtility {
     }
 	
 	
-	public void implicitWait(WebDriver driver) {
+	public void waitUsingimplicitWait(WebDriver driver) {
 		driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS) ;
 
 	}
@@ -46,7 +46,7 @@ public class WaitUtility {
 	    wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
-    public void fluentWait(WebDriver driver, WebElement target) {
+    public void waitforelementToBeClickableUsingFluentWait(WebDriver driver, WebElement target) {
 		
 		Wait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver)
 		        .withTimeout(Duration.ofSeconds(PAGE_LOAD_WAIT))
