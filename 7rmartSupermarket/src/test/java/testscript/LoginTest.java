@@ -11,7 +11,7 @@ import utilities.ExcelUtility;
 
 public class LoginTest extends Base {
     
-	@Test(retryAnalyzer =retry.Retry.class,groups= {"Regression"} ,description="verify whether the user is able to log in with correct username and correct password")
+	@Test(retryAnalyzer =listerners.Retry.class,groups= {"Regression"} ,description="verify whether the user is able to log in with correct username and correct password")
 	public void verifyWhetherTheUserIsAbleToLoginWithValidCredentials() {
 		String username =ExcelUtility.getString(1, 0, "LoginPage");
 		String password=ExcelUtility.getString(1, 1, "LoginPage");
@@ -27,7 +27,7 @@ public class LoginTest extends Base {
 
 	}
 	
-	@Test(retryAnalyzer =retry.Retry.class,groups= {"Smoke"},description="verify whether the user is unable to log in with incorrect username and correct password")
+	@Test(retryAnalyzer =listerners.Retry.class,groups= {"Smoke"},description="verify whether the user is unable to log in with incorrect username and correct password")
 	public void verifyWhetherTheUserIsUnbleToLoginWithIncorrectUserNameAndCorrectPassWord() {
 		String username =ExcelUtility.getString(3, 0, "LoginPage");
 		String password=ExcelUtility.getString(3, 1, "LoginPage");
@@ -43,7 +43,7 @@ public class LoginTest extends Base {
 
 	}
 	
-	@Test(retryAnalyzer =retry.Retry.class,description="verify whether the user is unable to log in with correct username and incorrect password")
+	@Test(retryAnalyzer =listerners.Retry.class,description="verify whether the user is unable to log in with correct username and incorrect password")
 	public void verifyWhetherTheUserIsUnableToLoginWithCorrectUserNameAndIncorrectPassWord() {
 		String username =ExcelUtility.getString(2, 0, "LoginPage");
 		String password=ExcelUtility.getString(2, 1, "LoginPage");
@@ -59,7 +59,7 @@ public class LoginTest extends Base {
 
 	}
 	
-	@Test(retryAnalyzer =retry.Retry.class,dataProvider = "LoginProvider" ,description="verify whether the user is unable to log in with incorrect username and incorrect password")
+	@Test(retryAnalyzer =listerners.Retry.class,dataProvider = "LoginProvider" ,description="verify whether the user is unable to log in with incorrect username and incorrect password")
 	public void verifyWhetherTheUserIsUnableToLoginWithIncorrectUserNameAndIncorrectPassWord(String username,String password) {
 		
 		LoginPage loginPage = new LoginPage(driver);

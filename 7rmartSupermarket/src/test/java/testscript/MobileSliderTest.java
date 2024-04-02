@@ -11,7 +11,7 @@ import utilities.ExcelUtility;
 public class MobileSliderTest extends Base{
 	
 
-	@Test(retryAnalyzer =retry.Retry.class,groups= {"Regression"} ,description="Verify whether the Mobile slider page heading is correct")
+	@Test(retryAnalyzer =listerners.Retry.class,groups= {"Regression"} ,description="Verify whether the Mobile slider page heading is correct")
 	public void verifyWhetherMobleSliderPageHeadingIsCorrect() {
 		
 		MobileSliderPage mobileSliderPage = new MobileSliderPage(driver);				

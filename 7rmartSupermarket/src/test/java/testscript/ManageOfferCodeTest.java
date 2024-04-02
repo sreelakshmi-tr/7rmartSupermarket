@@ -10,7 +10,7 @@ import pages.ManageOfferCodePage;
 import utilities.ExcelUtility;
 
 public class ManageOfferCodeTest extends Base{
-@Test(retryAnalyzer =retry.Retry.class,groups= {"Regression"} ,description="verify whether new offer code is getting added when correct deatils are entered")
+@Test(retryAnalyzer =listerners.Retry.class,groups= {"Regression"} ,description="verify whether new offer code is getting added when correct deatils are entered")
 public void veryfyWhetherNewOfferCodeIsGettingAddedWhenCoorectDetailsAreEntered() {
 	LoginPage loginPage = new LoginPage(driver);
     loginPage.login();

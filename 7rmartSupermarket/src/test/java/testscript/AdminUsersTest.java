@@ -12,7 +12,7 @@ import utilities.ExcelUtility;
 public class AdminUsersTest extends Base {
 	
 	
-    @Test(retryAnalyzer =retry.Retry.class,groups= {"Regression"} ,description="Verify whether new user is getting added when entering corrrect details ")
+    @Test(retryAnalyzer =listerners.Retry.class,groups= {"Regression"} ,description="Verify whether new user is getting added when entering corrrect details ")
 	public void verifyWhetherAnUserSuccessfullyGetAddedWhenEnteringCorrectDetails() {
 		
 		

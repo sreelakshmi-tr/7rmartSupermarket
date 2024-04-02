@@ -11,7 +11,7 @@ import utilities.ExcelUtility;
 
 public class ManageProductTest extends Base {
 
-	@Test(retryAnalyzer =retry.Retry.class,groups= {"Regression"} ,description ="Veryfy whether any product is featured out of first 20 products in the table")
+	@Test(retryAnalyzer =listerners.Retry.class,groups= {"Regression"} ,description ="Veryfy whether any product is featured out of first 20 products in the table")
 	public void verifyAnyProductIsFeaturedInTheList() {
 		
 		ManageProductPage manageProductPage= new ManageProductPage(driver);

@@ -10,7 +10,7 @@ import utilities.ExcelUtility;
 
 public class ManageOrderTest extends Base {
     
-	@Test(retryAnalyzer =retry.Retry.class,groups= {"Regression"} ,description="Veryfing able to see the details of an existing order number")
+	@Test(retryAnalyzer =listerners.Retry.class,groups= {"Regression"} ,description="Veryfing able to see the details of an existing order number")
 	public void verifyIsOrderDetailsViewableForAnExistingOrderID() {
 		
 		
